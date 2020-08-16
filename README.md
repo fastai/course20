@@ -5,7 +5,7 @@
 
 To install everything needed for the fastbook, you can run:
 ``` 
-conda install -c fastai fastai2
+conda install -c fastai fastai2 graphviz
 pip install fastbook
 ```
 
