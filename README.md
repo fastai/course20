@@ -16,4 +16,4 @@ pip install fastbook
 
 ## Develop
 
-Development of this lib requires [nbdev](https://nbdev.fast.ai).
+Development of this lib requires [nbdev](https://nbdev.fast.ai). Users of this lib do not require nbdev, however.
