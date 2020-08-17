@@ -13,3 +13,7 @@ or alternatively (if you've already got PyTorch installed):
 ```
 pip install fastbook
 ```
+
+## Develop
+
+Development of this lib requires [nbdev](https://nbdev.fast.ai).
