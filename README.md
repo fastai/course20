@@ -5,12 +5,11 @@
 
 To install everything needed for the fastbook, you can run:
 ``` 
-conda install -c fastai fastai2 graphviz
+conda install -c fastai -c pytorch fastbook
 ```
 
-or alternatively:
+or alternatively (if you've already got PyTorch installed):
 
 ```
 pip install fastbook
 ```
-
