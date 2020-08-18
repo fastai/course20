@@ -1,4 +1,4 @@
-__version__ = "0.0.6"
+__version__ = "0.0.7"
 from fastai2.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
@@ -7,7 +7,7 @@ import matplotlib as mpl
 try: from ipywidgets import widgets
 except ModuleNotFoundError: warn("Missing `ipywidgets` - please install it")
 try: import sentencepiece
-except ModuleNotFoundError: warn("Missing `sentencepiece` - please run `pip install sentencepiece`")
+except ModuleNotFoundError: warn("Missing `sentencepiece` - please run `pip install 'sentencepiece<0.1.90'`")
 try:
     from azure.cognitiveservices.search.imagesearch import ImageSearchClient as api
     from msrest.authentication import CognitiveServicesCredentials as auth
@@ -29,6 +29,14 @@ torch.backends.cudnn.benchmark = False
 pd.set_option('display.max_columns',999)
 np.set_printoptions(linewidth=200)
 torch.set_printoptions(linewidth=200)
+
+def setup_colab():
+    "Sets up Colab. First run `!pip install -Uqq fastbook` in a cell"
+    assert IN_COLAB, "You do not appear to be running in Colab"
+    global gdrive
+    gdrive = Path('/content/gdrive/My Drive')
+    from google.colab import drive
+    if not gdrive.exists(): drive.mount(str(gdrive.parent))
 
 def gv(s): return graphviz.Source('digraph G{ rankdir="LR"' + s + '; }')
 
