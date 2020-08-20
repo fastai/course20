@@ -1,4 +1,4 @@
-__version__ = "0.0.7"
+__version__ = "0.0.8"
 from fastai2.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
@@ -37,6 +37,9 @@ def setup_colab():
     gdrive = Path('/content/gdrive/My Drive')
     from google.colab import drive
     if not gdrive.exists(): drive.mount(str(gdrive.parent))
+
+def setup_book():
+    if IN_COLAB: return setup_colab()
 
 def gv(s): return graphviz.Source('digraph G{ rankdir="LR"' + s + '; }')
 
