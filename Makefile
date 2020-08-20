@@ -1,4 +1,15 @@
-SRC = $(wildcard nbs/*.ipynb)
+.ONESHELL:
+SHELL := /bin/bash
+SRC = $(wildcard *.ipynb)
+
+all: docs
+
+docs_serve: docs
+	cd docs && bundle exec jekyll serve
+
+docs: $(SRC)
+	nbdev_build_docs
+	touch docs
 
 release: pypi
 	nbdev_conda_package --upload_user fastai --build_args '-c pytorch -c fastai'
