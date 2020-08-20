@@ -1,4 +1,4 @@
-# fastbook libraries
+# Deep Learning for Coders, 2020, the website
 > Simple installer for everything needed for fastbook
 
 ## Installing
