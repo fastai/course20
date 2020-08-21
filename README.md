@@ -12,7 +12,7 @@ To watch the videos, click on the *Lessons* section in the navigation sidebar. T
 
 Each video covers a chapter from the book. The entirety of every chapter of the book is available as an interactive Jupyter Notebook. [Jupyter Notebook](https://jupyter.org/) is the most popular tool for doing data science in Python, for good reason. It is powerful, flexible, and easy to use. We think you will love it! Since the most important thing for learning deep learning is writing code and experimenting, it's important that you have a great platform for experimenting with code.
 
-To get started with one of the recommended online platforms (currently, Colab or Gradient, both of which are free), click on one of those options in the navigation sidebar. We strongly suggest using one of the recommended online platforms for running the notebooks, and to *not* use your own computer, unless you're very experienced with Linux system adminstration and handling GPU drivers, CUDA, and so forth.
+To get started with one of the recommended online platforms (currently, Colab or [Paperspace Gradient](https://gradient.paperspace.com), both of which are free), click on one of those options in the navigation sidebar. We strongly suggest using one of the recommended online platforms for running the notebooks, and to *not* use your own computer, unless you're very experienced with Linux system adminstration and handling GPU drivers, CUDA, and so forth.
 
 ## Is this course for me?
 
