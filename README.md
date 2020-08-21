@@ -2,7 +2,7 @@
 > The book and the course that teaches everything you need for modern deep learning
 
 
-Welcome to *Practical Deep Learning for Coders*. This web site covers the book and the 2020 version of the course, which are designed to work closely together. If you haven't yet go the book, you can [buy it here](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527). It's also [freely available](https://github.com/fastai/fastbook) as interactive Jupyter Notebooks; read on to learn how to access them..
+Welcome to *Practical Deep Learning for Coders*. This web site covers the book and the 2020 version of the course, which are designed to work closely together. If you haven't yet got the book, you can [buy it here](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527). It's also [freely available](https://github.com/fastai/fastbook) as interactive Jupyter Notebooks; read on to learn how to access them..
 
 ## How do I get started?
 
