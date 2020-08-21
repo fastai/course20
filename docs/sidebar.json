@@ -1,7 +1,17 @@
 {
-  "Practical Deep Learning": {
+  "Getting started": {
     "Overview": "/",
     "Colab": "/start_colab.html",
     "Gradient": "/start_gradient.html"
+  },
+  "Lessons": {
+    "Lesson 1 - Your first models": "videos?lesson=1",
+    "Lesson 2 - Evidence and p values": "videos?lesson=2",
+    "Lesson 3 - Production and deployment": "videos?lesson=3",
+    "Lesson 4 - SGD from scratch": "videos?lesson=4",
+    "Lesson 5 - Data ethics": "videos?lesson=5",
+    "Lesson 6 - Collaborative filtering": "videos?lesson=6",
+    "Lesson 7 - Tabular data": "videos?lesson=7",
+    "Lesson 8 - Natural language processing": "videos?lesson=8"
   }
 }
