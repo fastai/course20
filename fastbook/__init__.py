@@ -1,4 +1,4 @@
-__version__ = "0.0.8"
+__version__ = "0.0.9"
 from fastai.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc

@@ -16,6 +16,33 @@ entries:
       title: Gradient
       url: /start_gradient.html
     output: web
-    title: Practical Deep Learning
+    title: Getting started
+  - folderitems:
+    - output: web,pdf
+      title: Lesson 1 - Your first models
+      url: videos?lesson=1
+    - output: web,pdf
+      title: Lesson 2 - Evidence and p values
+      url: videos?lesson=2
+    - output: web,pdf
+      title: Lesson 3 - Production and deployment
+      url: videos?lesson=3
+    - output: web,pdf
+      title: Lesson 4 - SGD from scratch
+      url: videos?lesson=4
+    - output: web,pdf
+      title: Lesson 5 - Data ethics
+      url: videos?lesson=5
+    - output: web,pdf
+      title: Lesson 6 - Collaborative filtering
+      url: videos?lesson=6
+    - output: web,pdf
+      title: Lesson 7 - Tabular data
+      url: videos?lesson=7
+    - output: web,pdf
+      title: Lesson 8 - Natural language processing
+      url: videos?lesson=8
+    output: web
+    title: Lessons
   output: web
   title: Sidebar

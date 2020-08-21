@@ -67,15 +67,15 @@ After finishing this course you will know:
   - Natural language processing (NLP), including document classification (e.g., movie review sentiment analysis) and language modeling
   - Tabular data (e.g., sales prediction) with categorical data, continuous data, and mixed data, including time series
   - Collaborative filtering (e.g., movie recommendation)
-- How to turn your models into web applications
+- How to turn your models into web applications, and deploy them
 - Why and how deep learning models work, and how to use that knowledge to improve the accuracy, speed, and reliability of your models
 - The latest deep learning techniques that really matter in practice
-- How to read a deep learning research paper
-- How to implement deep learning algorithms from scratch
+- How to implement stochastic gradient descent and a complete training loop from scratch
 - How to think about the ethical implications of your work, to help ensure that you're making the world a better place and that your work isn't misused for harm
 
-See the table of contents for a complete list, but to give you a taste, here are some of the techniques covered (don't worry if none of these words mean anything to you yet--you'll learn them all soon): 
+Here are some of the techniques covered (don't worry if none of these words mean anything to you yet--you'll learn them all soon): 
 
+- Random forests and gradient boosting
 - Affine functions and nonlinearities
 - Parameters and activations
 - Random initialization and transfer learning
@@ -85,10 +85,8 @@ See the table of contents for a complete list, but to give you a taste, here are
 - Dropout
 - Data augmentation
 - Weight decay
-- ResNet and DenseNet architectures
 - Image classification and regression
-- Embeddings
+- Entity and word embeddings
 - Recurrent neural networks (RNNs)
 - Segmentation
-- U-Net
 - And much more

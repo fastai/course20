@@ -1,3 +1,5 @@
+**Note**: *you can collapse the sidebars on the left and right (i.e this notes pane, and the contents pane) by clicking the arrow icons at the top next to each of them.*
+
 Welcome to Deep Learning for Coders! In this first lesson, we learn about what deep learning is, and how it's connected to machine learning, and regular computer programming. We get our GPU-powered deep learning server set up, and use it to train models across vision, NLP, tabular data, and collaborative filtering. We do this all in Jupyter Notebooks, using transfer learning from pretrained models for the vision and NLP training.
 
 We discuss the important topics of test and validation sets, and how to create and use them to avoid over-fitting. We learn about some key jargon used in deep learning.
