@@ -1,0 +1,58 @@
+repository: fastai/course20
+output: web
+topnav_title: Practical Deep Learning for Coders
+site_title: Practical Deep Learning for Coders
+company_name: fast.ai
+description: The Course and the Book
+google_search: 
+use_math: true
+google_analytics:
+twitter_username: fastdotai
+
+exclude:
+  - .idea/
+  - .gitignore
+  - vendor
+ 
+exclude: [vendor]
+
+default_badges:
+  colab: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
+sidebars: [home_sidebar]
+baseurl: /
+#theme: jekyll-theme-cayman
+
