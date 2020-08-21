@@ -1,4 +1,4 @@
-# Gradient | Fast.ai
+# Paperspace Gradient
 
 ![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/fastaiv4-gradient-new.jpg)
 
