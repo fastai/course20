@@ -10,7 +10,9 @@ If you're ready to dive in right now, here's how to get started. If you want to 
 
 To watch the videos, click on the *Lessons* section in the navigation sidebar. The lessons all have searchable transcripts; click "Transcript Search" in the top right panel to search for a word or phrase, and then click it to jump straight to video at the time that appears in the transcript. The videos are all captioned and also translated into Chinese (简体中文) and Spanish; while watching the video click the "CC" button to turn them on and off, and the setting button to change the language.
 
-Each videos covers a chapter from the book. The entirety of every chapter of the book is available as an interactive Jupyter Notebook. [Jupyter Notebook](https://jupyter.org/) is the most popular tool for doing data science in Python, for good reason. It is powerful, flexible, and easy to use. We think you will love it! Since the most important thing for learning deep learning is writing code and experimenting, it's important that you have a great platform for experimenting with code.
+Each video covers a chapter from the book. The entirety of every chapter of the book is available as an interactive Jupyter Notebook. [Jupyter Notebook](https://jupyter.org/) is the most popular tool for doing data science in Python, for good reason. It is powerful, flexible, and easy to use. We think you will love it! Since the most important thing for learning deep learning is writing code and experimenting, it's important that you have a great platform for experimenting with code.
+
+To get started with one of the recommended online platforms (currently, Colab or Gradient, both of which are free), click on one of those options in the navigation sidebar. We strongly suggest using one of the recommended online platforms for running the notebooks, and to *not* use your own computer, unless you're very experienced with Linux system adminstration and handling GPU drivers, CUDA, and so forth.
 
 ## What's this about?
 
