@@ -1,5 +1,5 @@
 __version__ = "0.0.8"
-from fastai2.vision.all import *
+from fastai.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
 import matplotlib as mpl

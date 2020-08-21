@@ -49,7 +49,7 @@ Before you start working you will need to update the fastai library and lesson n
 Once you click on 'Terminal' a new window should open with a terminal. Type:
 
 
-    pip install fastai2 fastcore --upgrade
+    pip install fastai fastcore --upgrade
 
 
 then
