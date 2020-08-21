@@ -2,7 +2,7 @@
 > The book and the course that teaches everything you need for modern deep learning
 
 
-Welcome to *Practical Deep Learning for Coders*. This web site covers the book and the 2020 version of the course, which are designed to work closely together. If you haven't yet go the book, you can [buy it here](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527). It's also [freely available](https://github.com/fastai/fastbook) as interactive Jupyter Notebooks; read on to learn how to access them..
+Welcome to *Practical Deep Learning for Coders*. This web site covers the book and the 2020 version of the course, which are designed to work closely together. If you haven't yet got the book, you can [buy it here](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527). It's also [freely available](https://github.com/fastai/fastbook) as interactive Jupyter Notebooks; read on to learn how to access them..
 
 ## How do I get started?
 
@@ -18,9 +18,9 @@ To get started with one of the recommended online platforms (currently, Colab or
 
 Thank you for letting us join you on your deep learning journey, however far along that you may be! Previous fast.ai courses have been studied by hundreds of thousands of students, from all walks of life, from all parts of the world. Many students have told us about how they've become [multiple gold medal winners](https://forums.fast.ai/t/my-first-gold-medal/54237) of [international machine learning competitions](https://towardsdatascience.com/my-3-year-journey-from-zero-python-to-deep-learning-competition-master-6605c188eec7), [received offers](https://forums.fast.ai/t/how-has-your-journey-been-so-far-learners/6480/2) from top companies, and having [research](https://ui.adsabs.harvard.edu/abs/2020EGUGA..2221465A/abstract) [papers](http://www.ieomsociety.org/ieom2020/papers/37.pdf) [published](https://pubs.rsna.org/doi/abs/10.1148/ryai.2019190113?journalCode=ai).
 
-It doesn't matter if you don't come from a technical or a mathematical background (though it's okay if you do too!); we wrote this course to make deep learning accessible to as many people as possible. The only prequisite is that you know how to code (a year of experience is enough), preferably in Python, and that you have at least followed a high school math course. The first three chapters have been explicitly written in a way that will allow executives, product managers, etc. to understand the most important things they'll need to know about deep learning -- if that's you, just skip over the code in those sections.
+It doesn't matter if you don't come from a technical or a mathematical background (though it's okay if you do too!); we wrote this course to make deep learning accessible to as many people as possible. The only prerequisite is that you know how to code (a year of experience is enough), preferably in Python, and that you have at least followed a high school math course. The first three chapters have been explicitly written in a way that will allow executives, product managers, etc. to understand the most important things they'll need to know about deep learning -- if that's you, just skip over the code in those sections.
 
-Deep learning is a computer technique to extract and transform data–-with use cases ranging from human speech recognition to animal imagery classification–-by using multiple layers of neural networks. A lot of people assume that you need all kinds of hard-to-find stuff to get great results with deep learning, but as you'll see in this course, those people are wrong. Here's a few thing you *absolutely don't need* to do world-class deep learning:
+Deep learning is a computer technique to extract and transform data–-with use cases ranging from human speech recognition to animal imagery classification–-by using multiple layers of neural networks. A lot of people assume that you need all kinds of hard-to-find stuff to get great results with deep learning, but as you'll see in this course, those people are wrong. Here's a few things you *absolutely don't need* to do world-class deep learning:
 
 | Myth (don't need) | Truth
 |---|---|
@@ -63,7 +63,7 @@ PyTorch works best as a low-level foundation library, providing the basic operat
 After finishing this course you will know:
 
 - How to train models that achieve state-of-the-art results in:
-  - Computer vision, indlucing image classification (e.g., classifying pet photos by breed), and image localization and detection (e.g., finding where the animals in an image are)
+  - Computer vision, including image classification (e.g., classifying pet photos by breed), and image localization and detection (e.g., finding where the animals in an image are)
   - Natural language processing (NLP), including document classification (e.g., movie review sentiment analysis) and language modeling
   - Tabular data (e.g., sales prediction) with categorical data, continuous data, and mixed data, including time series
   - Collaborative filtering (e.g., movie recommendation)
