@@ -12,6 +12,9 @@ entries:
     - output: web,pdf
       title: Colab
       url: /start_colab.html
+    - output: web,pdf
+      title: Gradient
+      url: /start_gradient.html
     output: web
     title: Practical Deep Learning
   output: web

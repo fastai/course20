@@ -1,6 +1,6 @@
 # Paperspace Gradient
 
-![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/fastaiv4-gradient-new.jpg)
+![image](images/gradient/fastaiv4-gradient-new.jpg)
 
 This is a quick guide to getting started with Deep Learning for Coders on Paperspace Gradient. With [Gradient](https://gradient.paperspace.com/), you get access to a Jupyter Notebook instance backed by a free GPU in less than 60 seconds, without any complicated installs or configuration. [Gradient](https://gradient.paperspace.com/) is built on top of [Paperspace](https://www.paperspace.com/), a GPU-accelerated cloud platform.
 
@@ -20,13 +20,13 @@ To get started, create an account [here](https://console.paperspace.com/signup?g
 
 2. Select the _Paperspace + Fast.AI_ base container.
 
-![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/choose-container.jpg)
+![image](images/gradient/choose-container.jpg)
 
 1. Select the type of machine you want to run on.
 
 Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever you type you last used. But it's a good idea always to check! This will prevent billing and performance surprises. For more information, please see [returning to work](https://course.fast.ai/update_gradient.html).
 
-![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/choose-instance.jpg)
+![image](images/gradient/choose-instance.jpg)
 
 1. Name your Notebook (optional)
 
@@ -34,7 +34,7 @@ Important note: remember that you can change the instance type _at any time._ Th
 
 3. Click Create Notebook
 
-![create](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/create.png)
+![create](images/gradient/create.png)
 
 Your Notebook will go from Pending to Running, and will be ready to use :star2:.
 
@@ -44,7 +44,7 @@ Note: When you using paid instances, clicking Create Notebook will start your No
 
 Before you start working you will need to update the fastai library and lesson notebooks. To do this you will have to access the terminal. You can do this by clicking in 'New', 'Terminal'.
 
-![terminal](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/terminal.jpg)
+![terminal](images/gradient/terminal.jpg)
 
 Once you click on 'Terminal' a new window should open with a terminal. Type:
 
@@ -63,11 +63,11 @@ Now you should close the terminal window.
 
 You should now have a running fast.ai notebook. It might take a few seconds to provision, but once it's running you just have to click "Open" to access your Jupyter notebook.
 
-![ready](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/ready.jpg)
+![ready](images/gradient/ready.jpg)
 
 Next from your jupyter notebook, click on 'fastbook' and you should look at something like this:
 
-![nb tuto](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/notebook-view-new.jpg)
+![nb tuto](images/gradient/notebook-view-new.jpg)
 
 Go back to the [first page](https://course.fast.ai/index.html) to see how to use this jupyter notebook and run the jupyter notebook tutorial. Come back here once you're finished and _don't forget to stop your instance_ with the next step
 
@@ -75,8 +75,8 @@ Go back to the [first page](https://course.fast.ai/index.html) to see how to use
 
 Just click stop on the notebook page or notebook list view. This will end the session.
 
-![stop1](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/stop-notebook1.jpg)
-![stop2](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/stop-notebook-list.jpg)
+![stop1](images/gradient/stop-notebook1.jpg)
+![stop2](images/gradient/stop-notebook-list.jpg)
 
 NOTE: When using paid instances, you _will_ be charged for the time that your notebook is running. You must stop the notebook to stop incurring charges.
 
@@ -94,7 +94,7 @@ The `/storage` folder is your [Persistent Storage](https://docs.paperspace.com/g
 
 Gradient Notebooks can be shared publicly so others can view and/or fork your work.  Just click the "share" button to generate a unique URL.
 
-![share](https://s3.amazonaws.com/ps.public.resources/img/fastai-v4/share.jpg)
+![share](images/gradient/share.jpg)
 
 ### Viewing a stopped notebook
 

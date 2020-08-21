@@ -1,6 +1,7 @@
 {
   "Practical Deep Learning": {
     "Overview": "/",
-    "Colab": "/start_colab.html"
+    "Colab": "/start_colab.html",
+    "Gradient": "/start_gradient.html"
   }
 }
