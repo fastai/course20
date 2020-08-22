@@ -36,7 +36,7 @@ Important note: remember that you can change the instance type _at any time._ Th
 
 ![create](images/gradient/create.png)
 
-Your Notebook will go from Pending to Running, and will be ready to use :star2:.
+Your Notebook will go from Pending to Running, and will be ready to use 🌟.
 
 Note: When you are using paid instances, clicking Create Notebook will start your Notebook and your billing session will begin. To stop billing, you must stop your Notebook.
 
