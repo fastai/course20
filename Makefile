@@ -3,6 +3,7 @@ SHELL := /bin/bash
 SRC = $(wildcard *.ipynb)
 
 all: docs
+	git commit -am update && git push
 
 docs_serve: docs
 	cd docs && bundle exec jekyll serve
