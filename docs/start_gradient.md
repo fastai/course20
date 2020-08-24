@@ -108,3 +108,27 @@ Paperspace provides $15 of free Gradient credit for using paid instances. This c
 
 Questions or issues related to course content, we recommend posting in the [fast.ai forum](http://forums.fast.ai/). For Paperspace-specific support, check out the rest of the [Gradient Docs](https://docs.paperspace.com/gradient/) or submit a support ticket with [this form](https://support.paperspace.com/hc/en-us/requests/new).
 
+## Developing fastai on Gradient
+
+If you would like to follow the [Developer guide for fastai](http://docs.fast.ai/dev-setup) and help develop the fastai library from your Gradient instance,
+read this section first for some Gradient-specific recommendations.
+
+> The Gradient terminal is easier to use if you first type `bash` after opening the terminal window. This will let you use the up/down arrows to explore command history, as well as use tab for text completion. To paste text into the prompt, use `ctrl-shift-v` in the terminal window. 
+
+### Things to keep in mind before working through the section [Setting up access and `gh`](http://docs.fast.ai/dev-setup#Setting-up-access-and-gh):
+
+Start with the _Paperspace + Fast.AI_ base container instance that you've already created.
+
+Your gradient instance has miniconda, not anaconda, so follow the miniconda-specific instructions in the developer guide. For example, the first command of the developer guide should be `conda install -y -c fastai -c pytorch fastai gh nbdev`
+
+If you are working through the Github SSH keygen tutorials and the `ssh-keygen` command doesn't work, you first need to install openssh-client on your Gradient instance. Type the commands 
+
+    apt-get update
+    apt-get upgrade
+    apt-get install openssh-client
+
+and then continue with the GitHub tutorial.
+
+### Things to keep in mind before working through the section [Set up `fastcore`](http://docs.fast.ai/dev-setup#Set-up-fastcore):
+
+Run these `clone` commands from the `/notebooks` directory, so the repos end up here next to the other ones.
