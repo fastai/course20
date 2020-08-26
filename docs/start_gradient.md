@@ -24,7 +24,7 @@ To get started, create an account [here](https://console.paperspace.com/signup?g
 
 1. Select the type of machine you want to run on.
 
-Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever type you last used. But it's a good idea always to check! This will prevent billing and performance surprises. For more information, please see [returning to work](https://course.fast.ai/update_gradient.html).
+Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever type you last used. But it's a good idea always to check! This will prevent billing and performance surprises.
 
 ![image](images/gradient/choose-instance.jpg)
 
