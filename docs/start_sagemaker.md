@@ -58,7 +58,7 @@ The first time you open any of the notebooks you will be asked to select the Jup
 
 <img alt="selectfastaikernel" src="/docs/images/sagemaker/selectkernel.png" class="screenshot">
 
-If you do not see the option fastai then the libraries and dependencies have not yet finished installing. Wait up to 10 min for this to complete, refresh the page and try to select the fastai kernel.
+If you do not see the option fastai, then the libraries and dependencies have not yet finished installing. Wait up to 10 min for this to complete, refresh the page and try to select the fastai kernel.
 
 ### Shutting down your instance
 
