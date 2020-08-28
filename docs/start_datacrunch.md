@@ -55,7 +55,7 @@ You can 'git clone' your desired repo, either by using your SSH key for username
 
 ![notebook terminal](images/datacrunch/jupyter_terminal.png)
 
-'git clone' your desired repository, for this course we run 'git clone https://github.com/fastai/course-v4'
+'git clone' your desired repository, for this course we run 'git clone https://github.com/fastai/course20'
 
 ![terminal git](images/datacrunch/jupyter_terminal_git.png)
 
