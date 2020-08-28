@@ -1,8 +1,4 @@
----
-title: Returning to Sagemaker
-keywords: 
-sidebar: home_sidebar
----
+# Amazon SageMaker
 
 To return to your notebook, the basic steps will be:
 
