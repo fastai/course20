@@ -17,7 +17,7 @@ Your instance will run a script when started to update the fastai library and ge
 
 Log in to the [AWS console](https://aws.amazon.com/console/) then click on the Sagemaker link (it should be in your history, otherwise find it in the 'Services' on the left or type sagemaker in the search bar). Once on this page, select 'Notebook instances' on the left menu.
 
-<img alt="" src="/docs/images/sagemaker/notebooks.png" class="screenshot">
+<img alt="" src="/docs/images/sagemaker/notebook.png" class="screenshot">
 
 Tick the box of the notebook you want to start, then click on 'Start'.
 
