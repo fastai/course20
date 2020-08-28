@@ -44,7 +44,7 @@ The instance we suggest, ml.p2.xlarge, is $1.26 an hour. The hourly rate is depe
 
 1. This will open the AWS CloudFormation web console with the template to create the AWS resources as per the screenshot below. Take a look at the input parameters and either accept the defaults or update them as necessary. Select the option box **I acknowledge that AWS CloudFormation might create IAM resources.** and then click the **Create** button to create the stack.
 
-    <img alt="create stack" src="/images/sagemaker/create_stack.png" class="screenshot">
+    <img alt="create stack" src="/docs/images/sagemaker/create_stack.png" class="screenshot">
 
 1. You will see the following CloudFormation page showing the stack is being created. Once the stack reaches the **CREATE_COMPLETE** state then open the AWS web console and click *Services* in the top bar, and type 'sagemaker'. You can then click *Amazon SageMaker*.
 
