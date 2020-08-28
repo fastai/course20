@@ -1,26 +1,21 @@
 # Amazon SageMaker
 
-This is a quick guide to starting v4 of the fast.ai course Practical Deep Learning for Coders using Amazon SageMaker. 
-
-If you are returning to work and have previously completed the steps below, please go to the [returning to work](/docs/update_sagemaker.md) section.
+This is a quick guide to starting v4 of the fast.ai course Practical Deep Learning for Coders using Amazon SageMaker. It assumes you already have an AWS account setup. If you do not then [follow the instructions here](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/) to create and activate your AWS account.
 
 We will use [AWS CloudFormation](https://aws.amazon.com/cloudformation/) to provision all of the SageMaker resources including the Notebook instance, Notebook Lifecyle configuration and IAM role. By default it will provision a SageMaker notebook instance of type *ml.p2.xlarge* which has the Nvidia K80 GPU and 50 GB of EBS disk space.
 
 ## Pricing
 
-The instance we suggest, ml.p2.xlarge, is $1.26 an hour. The hourly rate is dependent on the instance type selected, see all available types [here](https://aws.amazon.com/sagemaker/pricing/).  You will need to explicitely request a service limit increase to use ml.p2.xlarge or the ml.p3.2xlarge instance, [here](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase). Select limit type SageMaker and in the request select the appropriate region, SageMaker Notebooks & the instance type you are planning to use. Instances must be stopped to end billing.
+The instance we suggest, ml.p2.xlarge, is $1.26 an hour. The hourly rate is dependent on the instance type selected, see all available types [here](https://aws.amazon.com/sagemaker/pricing/).  
+You will need to explicitely request a service limit increase to use ml.p2.xlarge or the ml.p3.2xlarge instance, [here](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase). Select limit type SageMaker and  in the request select the region you want to work in, SageMaker Notebooks & the instance type you are planning to use. Select a new limit value of 1, add a description and submit on the bottom right of the page. Instances must be stopped to end billing.
+
+ <img alt="limitincrease" src="/docs/images/aws/increase_limit_sagemaker.png" class="screenshot">
 
 ## Getting Set Up
 
 ### Creating the SageMaker Notebook Instance
 
-1. Visit the [AWS webpage](https://aws.amazon.com/) and click on 'Sign In to the Console'. Next, enter your credentials if you are signing in or e-mail, account name and password if you need to sign up.
-
-    <img alt="signin" src="/docs/images/aws/signin.png" class="screenshot">
-
-    If you do not have an account, the button to press will say 'Sign up' instead of 'Sign in to the Console'. If you are signing up you will also need to set your credit card details. This will be the credit card to which all the charges of the instance usage will be applied (if you have free credits you will not be charged until they are over). Note that you will also need to provide a phone number that will be called to verify your identity.
-
-1. Once you have an account and are logged in we are ready to create all the SageMaker resources using CloudFormation. To lauch the CloudFormation stack click the *Launch Stack* button for the closest region to where you live **in the table below** . 
+1. We will create a [SageMaker Notebook Instance](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html) providing us the Jupyter notebook to run the course exercises by using [AWS CloudFormation](https://aws.amazon.com/cloudformation/). To launch the CloudFormation stack click the Launch Stack link for the closest region to where you live in the table below. 
 
     Region | Name | Launch link
     --- | --- | ---
@@ -42,27 +37,40 @@ The instance we suggest, ml.p2.xlarge, is $1.26 an hour. The hourly rate is depe
 
     <img alt="create stack" src="/docs/images/sagemaker/create_stack.png" class="screenshot">
 
-1. You will see the following CloudFormation page showing the stack is being created. Once the stack reaches the **CREATE_COMPLETE** state then open the AWS web console and click *Services* in the top bar, and type 'sagemaker'. You can then click *Amazon SageMaker*.
+
+1. You should be taken to the CloudFormation page where it shows that the stack status is CREATE_IN_PROGRESS. Wait for the stack status to change to **CREATE_COMPLETE**. After the stack has been created, open the SageMaker web console by selecting the Services menu item at the top left hand side of your AWS web console and entering the text “Sage” and then selecting the option Amazon SageMaker like the screenshot below.
 
    <img alt="sage" src="/docs/images/sagemaker/01.png" class="screenshot">
 
-1. On the left navigation bar, choose *Notebook instances*. This is where we create, manage, and access our notebook instances. You should see that your notebook instance named **fastai** status has the status *InService* as per the screenshot below.
+1. On the left navigation bar, choose Notebook instances. This is where we create, manage, and access our notebook instances. You should see that your notebook instance named **fastai-v4** status has the status InService as per the screenshot below. Click the link Open Jupyter link.
 
-   <img alt="pending" src="/docs/images/sagemaker/17.png" class="screenshot">
+   <img alt="openjupyter" src="/docs/images/sagemaker/open_juypter.png" class="screenshot">
+   
+   The first time the notebook instance is created it will install the fastai libraries and dependencies for the course which can take around 10 min.
+   
+### Working with the fastai Notebooks
 
-1. Click on the *Open Jupyter* link to open your Jupyter web console.
+Once you click the Open Jupyter link you will be redirected to the Jupyter notebook web interface with the course notebooks already installed.
+
+<img alt="coursenotebooks" src="/docs/images/sagemaker/course_notebooks.png" class="screenshot">
+
+The first time you open any of the notebooks you will be asked to select the Jupyter kernel. Select the kernel named fastai in the drop down selection like the screenshot below and click the Set Kernel button.
+
+<img alt="selectfastaikernel" src="/docs/images/sagemaker/selectkernel.png" class="screenshot">
+
+If you do not see the option fastai then the libraries and dependencies have not yet finished installing. Wait up to 10 min for this to complete, refresh the page and try to select the fastai kernel.
 
 ### Shutting down your instance
 
 - When you're done, close the notebook tab, and **remember to click stop!** If you don't, you'll keep getting charged until you click the *stop* button.
 
-    <img alt="stop" src="/docs/images/sagemaker/23.png" class="screenshot">
+    <img alt="stop" src="/docs/images/sagemaker/stop_instance.png" class="screenshot">
 
-  To see how to open it again, update the course or the fastai library, go to the [Returning to work page](update_sagemaker.html).
 
-## Troubleshooting installation problems
+### Returning back to work
 
-- If you do not receive a notifcation email after more than 15 minutes then there may have been a problem installing the fast.ai libraries and dependencies on your notebook instance. To troubleshoot, open the [AWS console](https://aws.amazon.com/console/) then click on the **CloudWatch** link (type *cloudwatch* in the search bar). Once you are in the CloudWatch console, navigate to *Logs -> /aws/sagemaker/NotebookInstances -> fastai/LifecycleConfigOnStart* or *fastai/LifecycleConfigOnCreate* to view the output of the installation scripts.
+When you want to go back to the notebook exercises just select your notebook instance you can select the action Start, wait a few min and pick up where you left off. It will take less time to setup as the fastai libraries have already been installed and the notebooks will be saved.
+
 
 ## More help
 
