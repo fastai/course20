@@ -36,8 +36,10 @@ When it turns green, just click on 'Open' and you'll be back to your notebooks.
 Every time the Notebook instance is started it will run a [Lifecycle Configuration](https://aws.amazon.com/blogs/machine-learning/customize-your-amazon-sagemaker-notebook-instances-with-lifecycle-configurations-and-the-option-to-disable-internet-access/) script. To update the start script, select 'Lifecycle configurations', it's on the sidebar under notebooks, name that starts with *fastai-v4LifecycleConfig*. Select the **Edit** button and now you will be able to update the **Start notebook** script to perform custom actions.
 
 ### Stop your instance
-When you finish working you must go back to your [AWS console](https://us-west-2.console.aws.amazon.com/sagemaker) and stop your instance manually to avoid getting extra charges. Just pick the notebook you want to stop and click on the 'Stop' button next to its name. You can configure your lifecycle configuration to automatically stop your notebook after some idle time. To do so add this [lifecycle config](https://github.com/aws-samples/amazon-sagemaker-notebook-instance-lifecycle-config-samples/blob/master/scripts/auto-stop-idle/on-start.sh) to the 'Start notebook' script.
+When you finish working you must go back to your [AWS console](https://us-west-2.console.aws.amazon.com/sagemaker) and stop your instance manually to avoid getting extra charges. Just pick the notebook you want to stop and click on the 'Stop' button next to its name. 
 
 <img alt="stop" src="/docs/images/sagemaker/23.png" class="screenshot">
+
+You can configure your lifecycle configuration to automatically stop your notebook after some idle time. To do so add this [lifecycle config](https://github.com/aws-samples/amazon-sagemaker-notebook-instance-lifecycle-config-samples/blob/master/scripts/auto-stop-idle/on-start.sh) to the 'Start notebook' script.
 
  **NOTE: you *will* be charged for the time that your instance is running.**
