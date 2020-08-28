@@ -42,15 +42,15 @@ You will need to explicitely request a service limit increase to use ml.p2.xlarg
 
    <img alt="sage" src="/docs/images/sagemaker/01.png" class="screenshot">
 
-1. On the left navigation bar, choose Notebook instances. This is where we create, manage, and access our notebook instances. You should see that your notebook instance named **fastai-v4** status has the status InService as per the screenshot below. Click the link Open Jupyter link.
+1. On the left navigation bar, choose Notebook instances. This is where we create, manage, and access our notebook instances. You should see that your notebook instance named **fastai-v4** status has the status InService as per the screenshot below.
 
    <img alt="openjupyter" src="/docs/images/sagemaker/open_juypter.png" class="screenshot">
    
    The first time the notebook instance is created it will install the fastai libraries and dependencies for the course which can take around 10 min.
    
-### Working with the fastai Notebooks
+### Working with the fastai course material
 
-Once you click the Open Jupyter link you will be redirected to the Jupyter notebook web interface with the course notebooks already installed.
+Once you click the Open Jupyter link you will be redirected to the Jupyter notebook web interface with the notebooks of the fastai course already installed.
 
 <img alt="coursenotebooks" src="/docs/images/sagemaker/course_notebooks.png" class="screenshot">
 
