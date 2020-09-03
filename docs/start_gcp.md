@@ -30,10 +30,14 @@ In case you don't have a GCP account yet, you can create one [here](https://clou
 
 The project on which you are going to run the image needs to be linked with your billing account. For this navigate to the [billing dashboard](https://console.cloud.google.com/billing/projects), click the '**...**' menu and choose '**change billing account**'.
 
-## Step 2: Create Notebook
+## Step 2: Request GPU quota increase
+
+By default your quota for "GPUs (all regions)" is set to 0, and you will need to request a quota increase in order to create a Notebooks instance with a GPU (as described below). Follow [these instructions](https://cloud.google.com/compute/quotas#requesting_additional_quota) to increase the quota for "GPUs (all regions)" to at least 1. Google says that the quota increase request may take up to 48 hours to process, but usually it should be processed much faster.
+
+## Step 3: Create Notebook
 
 1. From the menu on the left hand side choose "AI Platform" -> "Notebooks"
-2. Click "New Instance" ("Customize instance" to choose your options. You get price calculation on the right.)
+2. Click "New Instance" ("Customize instance" to choose your options. Make sure you've completed step 2 above if you want to select a GPU. You get price calculation on the right.)
 3. You should see the instance listed. Select a checkbox and click "START"
 4. After ~2mins click "OPEN JUPYTERLAB"
 
@@ -45,7 +49,7 @@ You can start/stop your instance as well as adjust GPU/CPU/Memory from the GUI:
 ![image](images/gcp/gcp_options.jpg)
 
 
-## Step 3: Install libraries
+## Step 4: Install libraries
 
 Before you start working you will need to update the fastai library and lesson notebooks. Jupyter Lab is just a jupyter notebook with some extra features to organize multiple notebooks and other files (read more [here](https://jupyter.org/)). It comes with the terminal so you can just run all your additional installs from here:
 
@@ -66,6 +70,6 @@ sudo sh cuda_10.2.89_440.33.01_linux.run
 ```
 
 
-## Step 4: Usage
+## Step 5: Usage
 
 **Remember to stop your instances!** (You can download Google Console app on your phone to stop them when you are not at your desk.)
