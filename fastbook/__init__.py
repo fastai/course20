@@ -1,8 +1,9 @@
 __version__ = "0.0.9"
+import matplotlib as mpl, pkgutil
 from fastai.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
-import matplotlib as mpl
+from io import StringIO, BytesIO
 
 try: from ipywidgets import widgets
 except ModuleNotFoundError: warn("Missing `ipywidgets` - please install it")
@@ -70,4 +71,7 @@ def cluster_columns(df, figsize=(10,6), font_size=12):
     fig = plt.figure(figsize=figsize)
     hc.dendrogram(z, labels=df.columns, orientation='left', leaf_font_size=font_size)
     plt.show()
+
+def image_cat (): return BytesIO(pkgutil.get_data('fastbook', 'images/cat.jpg'))
+def image_bear(): return BytesIO(pkgutil.get_data('fastbook', 'images/grizzly.jpg'))
 
