@@ -4,7 +4,7 @@
 
 ## Pricing
 
-The suggested server for fast.ai is a [1V100.6V image](https://datacrunch.io/products/), which has 1 dedicated NVidia Tesla V100 GPU with 6 CPU cores. The instance will cost $0.45/h when using the FastAI discount code **FastAI30%** upon topping up. The instances are billed per 10 minutes of usage.
+The suggested server for fast.ai is a [1V100.6V image](https://datacrunch.io/products/), which has 1 dedicated NVidia Tesla V100 GPU with 6 CPU cores. The instance will cost $0.52/h when using the FastAI discount code **FastAI20%** upon topping up. The instances are billed per 10 minutes of usage.
 
 ## Step 1: Signing up
 
