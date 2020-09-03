@@ -44,5 +44,5 @@ export const LESSONS_NAMES = [{
 
 export const quickLinks = [
   { title: 'Course Home', href: 'https://course.fast.ai/' },
-  { title: 'fast.ai', href: 'https://fast.ai/' },
+  { title: 'fast.ai', href: 'https://www.fast.ai/' },
 ]

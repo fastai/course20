@@ -2,7 +2,7 @@ In today's lesson we finish covering chapter 1 of the book, looking more at test
 
 Then we move on to looking at the critical machine learning topic of evidence, including discussing confidence intervals, priors, and the use of visualization to better understand evidence.
 
-Finally, we begin our look into productionization of models (chapter 2 of the book), including discussing the overall project plan for model development, and how to create your own datasets.
+Finally, we begin our look into productionization of models (chapter 2 of the book), including discussing the overall project plan for model development, and how to create your own datasets. Here's a helpful [forum post](https://forums.fast.ai/t/getting-the-bing-image-search-key/67417) explaining how to get the Bing API key you'll need for downloading images.
 
 ## Questionnaire
 
