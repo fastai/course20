@@ -6,8 +6,7 @@ We will use [AWS CloudFormation](https://aws.amazon.com/cloudformation/) to prov
 
 ## Pricing
 
-The instance we suggest, ml.p2.xlarge, is $1.26 an hour. The hourly rate is dependent on the instance type selected, see all available types [here](https://aws.amazon.com/sagemaker/pricing/).  
-You will need to explicitely request a service limit increase to use ml.p2.xlarge or the ml.p3.2xlarge instance, [here](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase). Select limit type SageMaker and  in the request select the region you want to work in, SageMaker Notebooks & the instance type you are planning to use. Select a new limit value of 1, add a description and submit on the bottom right of the page. Instances must be stopped to end billing.
+The default instance type, ml.p2.xlarge, is $1.26 an hour. The hourly rate is dependent on the instance type selected, see all available types [here](https://aws.amazon.com/sagemaker/pricing/). You will need to explicitely request a service limit increase to use ml.p2.xlarge or the ml.p3.2xlarge instance, [here](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase). Select limit type SageMaker and  in the request select the region you want to work in, SageMaker Notebooks & the instance type you are planning to use. Select a new limit value of 1, add a description and submit on the bottom right of the page. Instances must be stopped to end billing.
 
  <img alt="limitincrease" src="/docs/images/aws/increase_limit_sagemaker.png" class="screenshot">
 

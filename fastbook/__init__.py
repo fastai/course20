@@ -1,4 +1,4 @@
-__version__ = "0.0.9"
+__version__ = "0.0.10"
 import matplotlib as mpl, pkgutil
 from fastai.vision.all import *
 from pandas.api.types import CategoricalDtype

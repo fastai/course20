@@ -4,6 +4,7 @@
   }, "Notebook Servers": {
     "Colab": "/start_colab",
     "Gradient": "/start_gradient"
+    "Sagemaker": "/start_sagemaker"
   }, "Full Linux Servers": {
       "Google Cloud": "/start_gcp",
       "DataCrunch.io": "/start_datacrunch"
