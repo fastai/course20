@@ -1,10 +1,14 @@
 {
   "Getting started": {
-    "Overview": "/",
-    "Colab": "/start_colab.html",
-    "Gradient": "/start_gradient.html"
-  },
-  "Lessons": {
+    "Overview": "/"
+  }, "Notebook Servers": {
+    "Colab": "/start_colab",
+    "Gradient": "/start_gradient"
+    "Sagemaker": "/start_sagemaker"
+  }, "Full Linux Servers": {
+      "Google Cloud": "/start_gcp",
+      "DataCrunch.io": "/start_datacrunch"
+  }, "Lessons": {
     "Lesson 1 - Your first models": "videos?lesson=1",
     "Lesson 2 - Evidence and p values": "videos?lesson=2",
     "Lesson 3 - Production and deployment": "videos?lesson=3",

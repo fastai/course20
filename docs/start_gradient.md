@@ -24,7 +24,7 @@ To get started, create an account [here](https://console.paperspace.com/signup?g
 
 1. Select the type of machine you want to run on.
 
-Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever you type you last used. But it's a good idea always to check! This will prevent billing and performance surprises. For more information, please see [returning to work](https://course.fast.ai/update_gradient.html).
+Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever type you last used. But it's a good idea always to check! This will prevent billing and performance surprises.
 
 ![image](images/gradient/choose-instance.jpg)
 
@@ -36,9 +36,9 @@ Important note: remember that you can change the instance type _at any time._ Th
 
 ![create](images/gradient/create.png)
 
-Your Notebook will go from Pending to Running, and will be ready to use :star2:.
+Your Notebook will go from Pending to Running, and will be ready to use 🌟.
 
-Note: When you using paid instances, clicking Create Notebook will start your Notebook and your billing session will begin. To stop billing, you must stop your Notebook.
+Note: When you are using paid instances, clicking Create Notebook will start your Notebook and your billing session will begin. To stop billing, you must stop your Notebook.
 
 ## Step 3 : Update the fastai library
 
@@ -108,3 +108,27 @@ Paperspace provides $15 of free Gradient credit for using paid instances. This c
 
 Questions or issues related to course content, we recommend posting in the [fast.ai forum](http://forums.fast.ai/). For Paperspace-specific support, check out the rest of the [Gradient Docs](https://docs.paperspace.com/gradient/) or submit a support ticket with [this form](https://support.paperspace.com/hc/en-us/requests/new).
 
+## Developing fastai on Gradient
+
+If you would like to follow the [Developer guide for fastai](http://docs.fast.ai/dev-setup) and help develop the fastai library from your Gradient instance,
+read this section first for some Gradient-specific recommendations.
+
+> The Gradient terminal is easier to use if you first type `bash` after opening the terminal window. This will let you use the up/down arrows to explore command history, as well as use tab for text completion. To paste text into the prompt, use `ctrl-shift-v` in the terminal window. 
+
+### Things to keep in mind before working through the section [Setting up access and `gh`](http://docs.fast.ai/dev-setup#Setting-up-access-and-gh):
+
+Start with the _Paperspace + Fast.AI_ base container instance that you've already created.
+
+Your gradient instance has miniconda, not anaconda, so follow the miniconda-specific instructions in the developer guide. For example, the first command of the developer guide should be `conda install -y -c fastai -c pytorch fastai gh nbdev`
+
+If you are working through the Github SSH keygen tutorials and the `ssh-keygen` command doesn't work, you first need to install openssh-client on your Gradient instance. Type the commands 
+
+    apt-get update
+    apt-get upgrade
+    apt-get install openssh-client
+
+and then continue with the GitHub tutorial.
+
+### Things to keep in mind before working through the section [Set up `fastcore`](http://docs.fast.ai/dev-setup#Set-up-fastcore):
+
+Run these `clone` commands from the `/notebooks` directory, so the repos end up here next to the other ones.
