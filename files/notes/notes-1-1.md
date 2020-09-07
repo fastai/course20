@@ -8,6 +8,8 @@ We also discuss how AI projects can fail, and techniques for avoiding failure.
 
 ## Questionnaire
 
+The questions below are the same as those in the book. For more, including detailed answers and links to the video timeline, have a look at Radek Osmulski's [aiquizzes](http://aiquizzes.com/howto).
+
 (If you're not sure of the answer to a question, try watching the next lesson and then coming back to this one, or read the first chapter of the book.)
 
 1. Do you need these for deep learning?
