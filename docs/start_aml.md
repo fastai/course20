@@ -1,6 +1,11 @@
 # Use FastAI with Azure Machine Learning!
 This repository has examples showing you how to use FastAI on Azure ML.
 
+# Pricing
+The suggested VM size is **Standard_NC6_Promo**, which costs $1.152/hour. The Standard NC6 is equipped with a on Nvidia K80 GPU. Read more about Azure Machine Learning pricing [here](https://azure.microsoft.com/en-ca/pricing/details/machine-learning/). VMs are pay as you go, so you must [stop the VM](#Shutting-down-your-compute) to end the billing.
+
+For those looking to use Azure Spot Instance follow instructions [here](https://forums.fast.ai/t/platform-azure/65527)
+
 # Create an ML workspace
 The [Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-machine-learning-studio) is the top-level resource for the service. It provides you with a centralized place to work with all the artifacts you create. 
 
@@ -8,7 +13,7 @@ You can create an ML workspace by clicking here - **specify a unique resource gr
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzureML-fastai%2Fmain%2F.cloud%2Fazuredeploy.json)
 
-More details about deployment in the button used above, Check out [ARM JSON definition](https://github.com/AbeOmor/AzureML-fastai/blob/main/.cloud/azuredeploy.json) and [Azure Machine Learning VM sizes](https://docs.microsoft.com/en-us/rest/api/azureml/workspacesandcomputes/virtualmachinesizes/list)
+More details about deployment in the button used above, Check out [ARM JSON definition](https://github.com/Azure/AzureML-fastai/blob/main/.cloud/azuredeploy.json) and [Azure Machine Learning VM sizes](https://azure.microsoft.com/en-ca/pricing/details/machine-learning/)
 
 # Quick FastAI Environment setup
 1) Go to the Azure ML studio (https://ml.azure.com) and find your ML workspace.
@@ -30,7 +35,7 @@ More details about deployment in the button used above, Check out [ARM JSON defi
 
 5) Copy the following command to clipboard:
 ```shell
-wget https://raw.githubusercontent.com/AbeOmor/AzureML-fastai/main/fastaionAMLCI.sh
+wget https://raw.githubusercontent.com/Azure/AzureML-fastai/main/fastaionAMLCI.sh
 bash fastaionAMLCI.sh
 ```
 If you don't already have fastai, then you have to wait for the libraries and dependencies to install. **Wait up to 10 mins** for this to complete and continue to the next step.
