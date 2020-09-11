@@ -1,10 +1,12 @@
 # SeeMe.ai Deployment.
 
 <div class="provider-logo">
-  <img alt="SeeMe.ai" src="images/seeme_ai/seeme_ai.svg">
+  <img alt="SeeMe.ai" width="600" src="images/seeme_ai/seeme_ai.svg">
 </div>
 
 This is a quick guide to deploy your trained models in just a few steps using [SeeMe.ai](https://seeme.ai), which allows you to easily deploy, use and share your models.
+
+**NB**: SeeMe.ai is currently in pre-release. You can register for an account by following the steps below, and get 1000 predictions per month. However note that unreleased services like this one may be unstable, or may change in substantial ways, including major changes to pricing or quotas. SeeMe.ai has not announced any pricing plans as yet.
 
 ## Before you begin
 
