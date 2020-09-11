@@ -95,7 +95,7 @@ application_id = client.get_application_id(
   base_framework="pytorch",
   framework="fastai",
   base_framework_version=str(torch.__version__), # or pass the version like a string: "1.6.0"
-  framework_version=str(fastai2.__version__), # or pass the version like a string: "0.0.26"
+  framework_version=str(fastai.__version__), # or pass the version like a string: "2.0.10"
   application="image_classification"
 )
 ```
@@ -255,6 +255,9 @@ Once invited, they will receive an email to either register (if that email is no
 
 For pricing details, check the [pricing page](https://www.seeme.ai/pricing/).
 
+## Status Page
+
+An overview of the current (and limited past) status of SeeMe.ai, including our site, web app and API: [status page](https://status.seeme.ai/). 
 
 ## Support / Feedback
 
