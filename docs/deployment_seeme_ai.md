@@ -253,6 +253,9 @@ Once invited, they will receive an email to either register (if that email is no
 
 For pricing details, check the [pricing page](https://www.seeme.ai/pricing/).
 
+## Status Page
+
+An overview of the current (and limited past) status of SeeMe.ai, including our site, web app and API: [status page](https://status.seeme.ai/). 
 
 ## Support / Feedback
 
