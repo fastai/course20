@@ -3,7 +3,7 @@
     "Overview": "/"
   }, "Notebook Servers": {
     "Colab": "/start_colab",
-    "Gradient": "/start_gradient"
+    "Gradient": "/start_gradient",
     "Sagemaker": "/start_sagemaker"
   }, "Full Linux Servers": {
       "Google Cloud": "/start_gcp",
@@ -17,5 +17,7 @@
     "Lesson 6 - Collaborative filtering": "videos?lesson=6",
     "Lesson 7 - Tabular data": "videos?lesson=7",
     "Lesson 8 - Natural language processing": "videos?lesson=8"
+  }, "Deployment": {
+    "SeeMe.ai": "/deployment_seeme_ai"
   }
 }
