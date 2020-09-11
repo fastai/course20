@@ -12,13 +12,13 @@ To watch the videos, click on the *Lessons* section in the navigation sidebar. T
 
 Each video covers a chapter from the book. The entirety of every chapter of the book is available as an interactive Jupyter Notebook. [Jupyter Notebook](https://jupyter.org/) is the most popular tool for doing data science in Python, for good reason. It is powerful, flexible, and easy to use. We think you will love it! Since the most important thing for learning deep learning is writing code and experimenting, it's important that you have a great platform for experimenting with code.
 
-To get started, we recomend using a Jupyter Server from one of the recommended online platforms:
+To get started, we recommend using a Jupyter Server from one of the recommended online platforms (click the links for instructions on how to use these for the course):
 - [Colab](/start_colab): A popular free service from Google. Google have changed the notebook platform quite a lot, so keyboard shortcuts are different, and not everything works (e.g. much of chapter 2 doesn't work because Colab doesn't support creating web app GUIs)
 - [Gradient](/start_gradient): Unlike Colab, this is a "real" Jupyter Notebook so everything in the course works. It also provides space to save your notebooks and models. However, sometimes the free servers get over-loaded, and when that happens it's impossible to connect.
 
 If you are interested in the experience of running a full Linux server, you can consider [DataCrunch.io](start_datacrunch) (very new service so we don't know how good it is, no setup required, extremely good value and extremely fast GPUs), or [Google Cloud](start_gcp) (extremely popular service, very reliable, but the fastest GPUs are far more expensive). We strongly suggest using one of the recommended online platforms for running the notebooks, and to *not* use your own computer, unless you're very experienced with Linux system adminstration and handling GPU drivers, CUDA, and so forth.
 
-If you need help, there's a [wonderful online community](https://forums.fast.ai/c/part1-v4/46) ready to help you at forums.fast.ai. Before asking a question on the forums, search carefully to see if your question has been answered before. (The forum system won't let you post until you've spent a few minutes on the site reading existing topics.)
+If you need help, there's a [wonderful online community](https://forums.fast.ai/c/part1-v4/46) ready to help you at forums.fast.ai. Before asking a question on the forums, search carefully to see if your question has been answered before. (The forum system won't let you post until you've spent a few minutes on the site reading existing topics.) One bit that many students find tricky is getting signed up for the Bing API for the image download task in lesson 2; here's a helpful [forum post](https://forums.fast.ai/t/getting-the-bing-image-search-key/67417) explaining how to get the Bing API key you'll need for downloading images.
 
 ## Is this course for me?
 
