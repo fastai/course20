@@ -18,6 +18,9 @@ entries:
     - output: web,pdf
       title: Gradient
       url: /start_gradient
+    - output: web,pdf
+      title: Sagemaker
+      url: /start_sagemaker
     output: web
     title: Notebook Servers
   - folderitems:
@@ -56,5 +59,11 @@ entries:
       url: videos?lesson=8
     output: web
     title: Lessons
+  - folderitems:
+    - output: web,pdf
+      title: SeeMe.ai
+      url: /deployment_seeme_ai
+    output: web
+    title: Deployment
   output: web
   title: Sidebar
