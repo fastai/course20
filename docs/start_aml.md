@@ -2,9 +2,9 @@
 This repository has examples showing you how to use FastAI on Azure ML.
 
 # Pricing
-The suggested VM size is **Standard_NC6_Promo**, which costs ~$0.576/hour. The Standard NC6 is equipped with a on Nvidia K80 GPU. Read more about Azure Machine Learning pricing [here](https://azure.microsoft.com/en-ca/pricing/details/machine-learning/). VMs are pay as you go, so you must [stop the VM](#Shutting-down-your-compute) to end the billing. In addition to the above costs for a VM, three additional resources will be deployed for the Azure Machine Learning Studio that will incur additional charges, [Azure Container Registry Basic account](https://azure.microsoft.com/en-ca/pricing/details/container-registry/), [Azure Block Blob Storage (general purpose v1)](https://azure.microsoft.com/en-ca/pricing/details/storage/blobs/) and [Key Vault](https://azure.microsoft.com/en-ca/pricing/details/key-vault/).
+The suggested VM size is **Standard_NC6**, which costs $0.90/hour. The Standard NC6 is equipped with a on Nvidia K80 GPU. Read more about Azure Machine Learning pricing [here](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/). VMs are pay as you go, so you must [stop the VM](#Shutting-down-your-compute) to end the billing. In addition to the above costs for a VM, three additional resources will be deployed for the Azure Machine Learning Studio that will incur additional charges, [Azure Container Registry Basic account](https://azure.microsoft.com/en-ca/pricing/details/container-registry/), [Azure Block Blob Storage (general purpose v1)](https://azure.microsoft.com/en-ca/pricing/details/storage/blobs/) and [Key Vault](https://azure.microsoft.com/en-ca/pricing/details/key-vault/).
 
-For those looking to use Azure Spot Instance instead of the Azure Machine Learning Studio mentioned below, follow these [instructions](https://forums.fast.ai/t/platform-azure/65527)
+For those looking to use [Azure Spot Instance](https://docs.microsoft.com/en-us/azure/virtual-machines/spot-vms) instead of the Azure Machine Learning Studio mentioned below, follow these [instructions](https://forums.fast.ai/t/platform-azure/65527)
 
 # Create an ML workspace
 The [Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-machine-learning-studio) is the top-level resource for the service. It provides you with a centralized place to work with all the artifacts you create. 
@@ -62,6 +62,7 @@ conda activate fastaienv
 conda install -y pip
 conda install -y ipykernel
 conda install -y -c fastai -c pytorch fastai
+conda install -y -c fastai fastbook
 conda install -y -c fastai nbdev
 ```
 If you don't already have fastai, then you have to wait for the libraries and dependencies to install. Wait up to 10 mins for this to complete and continue to the next step.
