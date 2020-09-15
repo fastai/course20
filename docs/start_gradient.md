@@ -80,8 +80,6 @@ Just click stop on the notebook page or notebook list view. This will end the se
 
 NOTE: When using paid instances, you _will_ be charged for the time that your notebook is running. You must stop the notebook to stop incurring charges.
 
-For more details, updating the course and the fastai library see "[Returning to work](https://course.fast.ai/update_gradient.html)".
-
 * * *
 
 ## Additional considerations:
