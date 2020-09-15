@@ -16,7 +16,7 @@ You should have an exported model and a Jupyter notebook which functions as your
 
 Create an account at [signup.heroku.com](http://signup.heroku.com/)...
 
-# Creating your repo. What goes where?
+# Creating your repo. What files do you need? What goes where?
 
 You project needs to be in a [GitHub](https://github.com/) repo as Heroku will copy it from there, and the simplest way is to have everything you need in your repo. However, Heroku limits the size of the final "slug" (server image) to 500 MB, and that includes all of the libraries you use and their dependancies, so what you thought was quite a small project, may well be closer to the limit than you expect.
 
@@ -31,3 +31,7 @@ urllib.request.urlretrieve(MODEL_URL, "model.pkl")
 learner = load_learner(Path("."), "model.pkl")
 ```
 
+The minimum you need in your repo is as follows:
+- notebook.ipynb
+- Procfile
+- requirements.txt
