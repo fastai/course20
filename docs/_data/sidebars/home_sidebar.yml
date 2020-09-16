@@ -61,6 +61,9 @@ entries:
     title: Lessons
   - folderitems:
     - output: web,pdf
+      title: Heroku
+      url: /deployment_heroku
+    - output: web,pdf
       title: SeeMe.ai
       url: /deployment_seeme_ai
     output: web
