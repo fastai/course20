@@ -69,7 +69,7 @@ Now you've got everything you need in GitHub, lets get it onto Heroku.
 - Once connected it will ask you for a repository to connect to. Enter your repo name here, click `Search` and then `Connect`
 - You should then see a section titled "App connected to GitHub", followed by 2 sections where you can choose between automatic or manual deployment of a particular branch. If you are a beginner, we recommend automatic deployment of your master branch. This means it will automatically update your Heroku app if you make changes to your notebook in GitHub.
 
-If you press the `Deploy Branch` button now you'll see a build progress list as it gathers all of the libraries you need and compliles the server image we talked about earlier. Expect this to take a couple of minutes. Eventually you should see "https://yourappname.herokuapp.com/ deployed to Heroku" and your app is now ready to share with the world.
+If you choose automatic deployment or press the `Deploy Branch` button now you'll see a build progress list as it gathers all of the libraries you need and compliles the server image we talked about earlier. Expect this to take a couple of minutes. Eventually you should see "https://yourappname.herokuapp.com/ deployed to Heroku" and your app is now ready to share with the world.
 
 # 500 MB "slug" limit
 
