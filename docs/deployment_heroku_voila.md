@@ -44,7 +44,7 @@ NB: If you're still using fastai version 1 you can use `fastai==1.0.61` here ins
 
 ### Procfile
 
-Your Procfile (process file) tells Heroku what kind of application to create. You have two choices when using Voila.
+Your Procfile (process file) only needs to contain 1 line, and it tells Heroku what kind of application to create. You have two choices when using Voila.
 
 One specific notebook (if you only have one thing to deploy right now you want this one):
 ```
