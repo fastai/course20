@@ -9,11 +9,11 @@ free account and deploy your first model using Voila and your Jupyter notebook.
 
 # Prerequisites
 
-You should have an exported model and a Jupyter notebook which functions as your demo. Chapter 2 of the fastai book discusses how to use Jupyter widgets to create a UI for your classifier demo.
+You should have an exported model and a Jupyter notebook which functions as your demo. Chapter 2 of the fastai book discusses how to use Jupyter widgets to create a UI for your classifier demo. You will also need a [GitHub](https://github.com/) account so if you don't have one yet, go and sign up.
 
 # Creating your GitHub repo. What do you need?
 
-You project needs to be in a [GitHub](https://github.com/) repo as Heroku will copy it from there, and the simplest way to get your demo deployed is to have *everything* you need in your repo (unless you start getting close to the size limit which we will discuss at the end).
+You project needs to be in a [GitHub](https://github.com/) repo as we're going to tell Heroku to copy it from there, and the simplest way to get your demo deployed is to have *everything* you need in your repo (unless you start getting close to the size limit which we will discuss at the end).
 
 The minimum you need in your repo is as follows:
 - yournotebook.ipynb
@@ -26,7 +26,7 @@ But let's assume for now that you will not have any size issues and also include
 
 ### requirements.txt
 
-When you deploy your application, Heroku builds a server image, essentially one giant file that it can quickly copy onto a server when someone wants to run your app. All of the packages you need must be specified in your requirement.txt. That means all of the things you `pip install` at the top of your notebook should be moved to here (plus any packages your particular platform may make available to you by default).
+When you deploy your application, Heroku builds a server image, essentially one giant file that it can quickly copy onto a server when someone wants to run your app. All of the packages you need must be specified in your requirements.txt. That means all of the things you `pip install` at the top of your notebook should be moved to here (plus any packages your particular platform may make available to you by default).
 
 The one big "gotcha" here is that you should use the CPU only versions of Pytorch for inference in your demo, because the GPU versions are *much* larger and do not fit within your 500 MB limit.
 
