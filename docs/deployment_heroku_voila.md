@@ -26,7 +26,7 @@ But let's assume for now that you will not have any size issues and also include
 
 ### requirements.txt
 
-When you deploy your application, Heroku builds a server image, essentially one giant file that it can quickly copy onto a server when someone wants to run your app. All of the packages you need must be specified in your requirements.txt. That means all of the things you `pip install` at the top of your notebook should be moved to here (plus any packages your particular platform may make available to you by default).
+When you deploy your application, Heroku builds a server image, essentially one giant file that it can quickly copy onto a server when someone wants to run your app. All of the packages you need must be specified in your requirements.txt. That means all of the things you `pip install` at the top of your notebook should be moved to here (plus any packages you use which your particular platform makes available by default).
 
 The one big "gotcha" here is that you should use the CPU only versions of Pytorch for inference in your demo, because the GPU versions are *much* larger and do not fit within your 500 MB limit.
 
