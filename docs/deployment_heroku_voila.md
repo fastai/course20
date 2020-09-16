@@ -13,7 +13,7 @@ You should have an exported model and a Jupyter notebook which functions as your
 
 # Creating your GitHub repo. What do you need?
 
-You project needs to be in a [GitHub](https://github.com/) repo as we're going to tell Heroku to copy it from there, and the simplest way to get your demo deployed is to have *everything* you need in your repo (unless you start getting close to the size limit which we will discuss at the end).
+You project needs to be in a GitHub repository as we're going to tell Heroku to copy it from there, and the simplest way to get your demo deployed is to have *everything* you need in your repo (unless you start getting close to the size limit which we will discuss at the end).
 
 The minimum you need in your repo is as follows:
 - yournotebook.ipynb
