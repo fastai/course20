@@ -18,6 +18,7 @@
     "Lesson 7 - Tabular data": "videos?lesson=7",
     "Lesson 8 - Natural language processing": "videos?lesson=8"
   }, "Deployment": {
+    "Heroku": "/deployment_heroku",
     "SeeMe.ai": "/deployment_seeme_ai"
   }
 }
