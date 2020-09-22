@@ -7,6 +7,7 @@
     "Sagemaker": "/start_sagemaker"
   }, "Full Linux Servers": {
       "Google Cloud": "/start_gcp",
+      "Azure": "/start_azure_dsvm",
       "DataCrunch.io": "/start_datacrunch"
   }, "Lessons": {
     "Lesson 1 - Your first models": "videos?lesson=1",

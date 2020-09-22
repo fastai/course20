@@ -28,6 +28,9 @@ entries:
       title: Google Cloud
       url: /start_gcp
     - output: web,pdf
+      title: Azure
+      url: /start_azure_dsvm
+    - output: web,pdf
       title: DataCrunch.io
       url: /start_datacrunch
     output: web
