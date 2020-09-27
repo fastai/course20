@@ -33,8 +33,8 @@ The one big "gotcha" here is that you should use the CPU only versions of Pytorc
 This is the minimum you should have in your requirements.txt file (I'm assuming that you are using Jupyter widgets for your UI).
 
 ```
-https://download.pytorch.org/whl/cpu/torch-1.5.1%2Bcpu-cp36-cp36m-linux_x86_64.whl
-https://download.pytorch.org/whl/cpu/torchvision-0.6.1%2Bcpu-cp36-cp36m-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torch-1.6.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.7.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
 fastai
 voila
 ipywidgets
