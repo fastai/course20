@@ -1,6 +1,6 @@
 # Model deployment to Azure Functions
 
-This is a quick guide to deploy trained fast.ai models as web services in Azure Functions, a cloud based serverless infrastructure, that allows you to consume these models from applications written in any language while providing you . Azure Functions provides development tools to first  build your application either locally or a cloud based desktop and then deploy them to the cloud. 
+This is a quick guide to deploy trained fast.ai models as web services in Azure Functions, a cloud based serverless infrastructure, that allows you to consume these models from applications written in any language using HTTP calls. Azure Functions provides thedevelopment tools to first  build your application either locally or a cloud based desktop and then deploy them to the cloud. 
 
 ## Pricing
 Azure Functions pricing is found [here](https://azure.microsoft.com/pricing/details/functions/). 
