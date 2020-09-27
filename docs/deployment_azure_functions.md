@@ -90,7 +90,7 @@ In a browser on your machine you can test the local Azure Function by visiting:
 
 You should see the prediction from the model outout as a JSON. 
 
-<img alt="TestOutput" src="images/azure_functions/testOutput.jpg" class="screenshot">
+<img alt="TestOutput" src="images/azure_functions/TestOutput.jpg" class="screenshot">
 
 Now that you have verified the model deployment and consumption locally, you are ready to deploy it to the cloud. 
 
