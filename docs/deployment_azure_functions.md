@@ -138,4 +138,4 @@ You can manage the deployed serverless function on Azure Portal.
 
 <img alt="AzurePortal" src="images/azure_functions/Portal.jpg" class="screenshot">
 
-There is an accompanying blog post with some additional details on this approach to deploy 
+There is an accompanying [blog post](https://medium.com/pytorch/efficient-serverless-deployment-of-pytorch-models-on-azure-dc9c2b6bfee7) with some additional details on this approach to deploy models in ONNX format to Azure Functions. 
