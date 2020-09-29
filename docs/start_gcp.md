@@ -32,7 +32,7 @@ The project on which you are going to run the image needs to be linked with your
 
 ## Step 2: Request GPU quota increase
 
-By default your quota for "GPUs (all regions)" is set to 0, and you will need to request a quota increase in order to create a Notebooks instance with a GPU (as described below). Follow [these instructions](https://cloud.google.com/compute/quotas#requesting_additional_quota) to increase the quota for "GPUs (all regions)" to at least 1. Google says that the quota increase request may take up to 48 hours to process, but usually it should be processed much faster.
+By default your quota for "GPUs (all regions)" is set to 0, and you will need to request a quota increase in order to create a Notebooks instance with a GPU (as described below). Follow [these instructions](https://cloud.google.com/ai-platform/training/docs/quotas#requesting_a_quota_increase) to increase the quota for "GPUs (all regions)" to at least 1. Google says that the quota increase request may take up to 48 hours to process, but usually it should be processed much faster.
 
 ## Step 3: Create Notebook
 
