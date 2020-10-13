@@ -56,7 +56,7 @@ Sylvain has written 10 math textbooks, covering the entire advanced French maths
 
 We care a lot about teaching. In this course, we start by showing how to use a complete, working, very usable, state-of-the-art deep learning network to solve real-world problems, using simple, expressive tools. And then we gradually dig deeper and deeper into understanding how those tools are made, and how the tools that make those tools are made, and so on… We always teaching through examples. We ensure that there is a context and a purpose that you can understand intuitively, rather than starting with algebraic symbol manipulation.
 
-## The software you'll be using
+## The software you will be using
 
 In this course, you'll be using [PyTorch](https://pytorch.org/) and [fastai](https://docs.fast.ai).
 
@@ -64,7 +64,7 @@ We've completed hundreds of machine learning projects using dozens of different 
 
 PyTorch works best as a low-level foundation library, providing the basic operations for higher-level functionality. The fastai library is the most popular library for adding this higher-level functionality on top of PyTorch. In this course, as we go deeper and deeper into the foundations of deep learning, we will also go deeper and deeper into the layers of fastai. This course covers version 2 of the fastai library, which is a from-scratch rewrite providing many unique features.
 
-## What you'll learn
+## What you will learn
 
 After finishing this course you will know:
 
