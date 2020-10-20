@@ -20,6 +20,7 @@
     "Lesson 8 - Natural language processing": "videos?lesson=8"
   }, "Deployment": {
     "Heroku": "/deployment_heroku",
+    "Azure Functions": "/deployment_azure_functions",
     "SeeMe.ai": "/deployment_seeme_ai"
   }
 }
