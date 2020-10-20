@@ -67,6 +67,9 @@ entries:
       title: Heroku
       url: /deployment_heroku
     - output: web,pdf
+      title: Azure Functions
+      url: /deployment_azure_functions
+    - output: web,pdf
       title: SeeMe.ai
       url: /deployment_seeme_ai
     output: web
