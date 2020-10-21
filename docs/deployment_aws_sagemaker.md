@@ -1,19 +1,7 @@
 # Deploy Fastai model to AWS Sagemaker with BentoML
 
-This guide demonstrates how to deploy a chest X-rays image
+This guide demonstrates how to deploy a chest X-ray image
 classification model from [tutorial 61](https://github.com/fastai/fastai/blob/master/nbs/61_tutorial.medical_imaging.ipynb) to AWS Sagemaker with BentoML.
-
-[BentoML](https://github.com/bentoml/BentoML) is a framework for serving, managing, and deploying machine learning models.
-It is aiming to bridge the gap between Data Science and DevOps, and enable teams to
-deliver prediction services in a fast, repeatable, and scalable way.
-
-BentoML makes moving trained ML models to production easy:
-
-- Package models trained with **any ML frameworks** and reproduce them for model serving in production
-- **Deploy anywhere** for online API serving or offline batch serving
-- High-Performance API model server with *adaptive micro-batching* support
-- Central hub for managing models and deployment process via Web UI and APIs
-- Modular and flexible design making it *adaptable to your infrastructure*
 
 ## Prerequisites
 
@@ -27,12 +15,10 @@ BentoML makes moving trained ML models to production easy:
 
 ## Build Fastai model server with BentoML
 
-You can follow this tutorial at BentoML gallery [here](https://github.com/bentoml/gallery/blob/master/fast-ai/fastai2_medical/medical_imaging.ipynb).
-
+You can follow this tutorial [here](https://github.com/bentoml/gallery/blob/master/fast-ai/fastai2_medical/medical_imaging.ipynb).
 
 Model serving with BentoML comes after a model is trained. The first step is creating a prediction service class,
 which defines the models required and the inference APIs which contains the serving logic code.
-
 
 ```
 # medical_image_service.py
@@ -88,10 +74,9 @@ saved_path = svc.save()
 
 ## Deploy to AWS Sagemaker
 
-
 You need to provide the deployment name, BentoService information in the format of `name:version` and the API name to the deploy command `bentoml sagemaker deploy`.
 
-BentoML will handles containerize model, Sagemaker model creation, endpoint configuration and other operations for you.
+BentoML handles containerizing the model, Sagemaker model creation, endpoint configuration and other operations for you.
 
 *Example:*
 
@@ -104,7 +89,7 @@ $ bentoml sagemaker deploy my-first-deployment \
 Deploying Sagemaker deployment
 ....
 [2020-10-13 15:44:54,626] INFO - Successfully built 1efba0843a79
-[2020-10-13 15:44:54,636] INFO - Successfully tagged 192023623294.dkr.ecr.us-west-2.amazonaws.com/fastaimedicalimagingservice-sagemaker:20201013153437_51E59E
+[2020-10-13 15:44:54,636] INFO - Successfully tagged 192023623294.dkr.ecr.us-west-2.amazonaws.com/fastaimedicalimagingservice-sagemaker:20201013153437_51E59E
 |[2020-10-13 15:52:10,619] INFO - ApplyDeployment (my-first-deployment, namespace dev) succeeded
 Successfully created AWS Sagemaker deployment my-first-deployment
 {
@@ -190,11 +175,3 @@ BentoML cleans up resources when you want to delete your deployment.
 ```
 $ bentoml sagemaker delete my-first-deployment
 ```
-
-## Additional Resources
-
-* [BentoML Github Repository]()
-* [BentoML Documentation]()
-* [Quick start guide]()
-* [Community]()
-
