@@ -13,7 +13,7 @@ Before you begin, you must have the following:
 
 1. An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free).
 
-On a Linux system or Windows (WSL or WSL2) ensure you have the following installed:
+ On a Linux system or Windows (WSL or WSL2) ensure you have the following installed:
 
 2. The [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2)
 3. The [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
@@ -27,7 +27,7 @@ You can develop for serverless deployment on Azure functions on your Linux machi
 
 Run the following commands to setup your Azure Functions project on your development machine.
 
-1. Create a Function App project directory and start directory
+### Create a Function App project and start directory 
 
 ```
 mkdir << Your projectname >>
@@ -36,7 +36,7 @@ mkdir start
 cd start
 ```
 
-2. Initialize Function App
+### Initialize Function App
 
 ```
 func init --worker-runtime python
@@ -45,17 +45,17 @@ func new --name classify --template "HTTP trigger"
 
 This creates a Function App that is triggered when it received a HTTP request. 
 
-3. Copy the deployment code template
+### Copy the deployment code template
+
 ```
 git clone https://github.com/Azure-Samples/functions-deploy-pytorch-onnx.git ~/functions-deploy-pytorch-onnx
 
-# Copy the deployment sample to function app
 cp -r ~/functions-deploy-pytorch-onnx/start ..
 
 ```
 The main files are **[ __ init__.py ](https://github.com/Azure-Samples/functions-deploy-pytorch-onnx/blob/main/start/classify/__init__.py)** and **[predictonnx.py](https://github.com/Azure-Samples/functions-deploy-pytorch-onnx/blob/main/start/classify/predictonnx.py)** in ```start/classify``` directory. The one in the repo works for the Bear detector example in fast.ai. It takes input from the HTTP GET request in "img" parameter which is a URL to an image which will be run through the model for prediction of the type of bear.  You can adapt the same easily for deploying other models.
 
-4. Create and activate Python virtualenv to setup ONNX runtime along with dependencies
+### Create and activate Python virtualenv with ONNX runtime and dependencies
 
 ```
 python -m venv .venv
@@ -64,7 +64,8 @@ source .venv/bin/activate
 pip install --no-cache-dir -r requirements.txt  
 ```
 
-5. Export the fast.ai / PyTorch model (learn.model) into [ONNX](http://onnx.ai) format to reduce the memory footprint and enable serving the model efficiently using [ONNXRuntime](https://github.com/microsoft/onnxruntime). At the end of the model training (like the Bear Detector sample) in fast.ai, you will have a ```learn.model```. Here is code to generate the model.onnx file for this fast.ai (or Pytorch) model from the ```learn.model```.
+### Export the model
+Export the fast.ai / PyTorch model (learn.model) into [ONNX](http://onnx.ai) format to reduce the memory footprint and enable serving the model efficiently using [ONNXRuntime](https://github.com/microsoft/onnxruntime). At the end of the model training (like the Bear Detector sample) in fast.ai, you will have a ```learn.model```. Here is code to generate the model.onnx file for this fast.ai (or Pytorch) model from the ```learn.model```.
 
 ```
 dummy_input = torch.randn(1, 3, 224, 224, device='cuda')
@@ -72,12 +73,12 @@ onnx_path =  "./model.onnx"
 torch.onnx.export(learn.model, dummy_input, onnx_path, verbose=False)
 ```
 
-6. Copy your ONNX model file (which should have a name model.onnx)  built from training the Pytorch model into  the "start/classify" directory within your Function App project. 
+Copy your ONNX model file (which should have a name model.onnx)  built from training the Pytorch model into  the "start/classify" directory within your Function App project. 
 
 
 You also need to create a ```labels.json``` in ```start/classify``` directory. For the fast.ai 3 class Bear detector example it looks like this ```["black","grizzly","teddy"]``` matching the class label and index during training. 
 
-7. Run the test locally
+### Run the test locally
 
 ```
 func start
@@ -98,7 +99,7 @@ Now that you have verified the model deployment and consumption locally, you are
 
 In order to deploy the model to the cloud, you must create the neccesary resources like a storage account and a Function App. We will use Azure Command Line Interface (CLI) to do this. 
 
-1. Create Azure resources using Azure CLI
+### Create Azure resources using Azure CLI
 
 ```
 az group create --name [[YOUR Function App name]]  --location westus2
@@ -116,13 +117,11 @@ az functionapp create --name [[YOUR Function App name]] -g [[YOUR Function App n
 *  Above, we set a flag to disable [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) on this Azure Functions App. Application Insights is a service Azure provides to help you monitor your Azure Functions and other Azure services. We recommend enabling Application Insights for production deployment and refer you to the documentation on [Functions Monitoring](https://docs.microsoft.com/azure/azure-functions/functions-monitoring) for more information on its usage.
 
 
-2. Publish to Azure
+### Publish to Azure
 
 ```
-# Install a local copy of ONNX runtime and dependencies to push to Azure Functions Runtime
 pip install  --target="./.python_packages/lib/site-packages"  -r requirements.txt
 
-# Publish Azure function to the 
 func azure functionapp publish [[YOUR Function App name] --no-build
 
 
