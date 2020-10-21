@@ -33,7 +33,6 @@ You can follow this tutorial at BentoML gallery [here](https://github.com/bentom
 Model serving with BentoML comes after a model is trained. The first step is creating a prediction service class,
 which defines the models required and the inference APIs which contains the serving logic code.
 
-TODO: Here is an example prediction service created for serving the Fastai model trained above:
 
 ```
 # medical_image_service.py
@@ -89,11 +88,10 @@ saved_path = svc.save()
 
 ## Deploy to AWS Sagemaker
 
-Deploy to AWS Sagemaker is incredibly easy, with single command and few parameters.
 
 You need to provide the deployment name, BentoService information in the format of `name:version` and the API name to the deploy command `bentoml sagemaker deploy`.
 
-BentoML will automatically handle containerize model, Sagemaker model creation, endpoint configuration and other operations for you.
+BentoML will handles containerize model, Sagemaker model creation, endpoint configuration and other operations for you.
 
 *Example:*
 
@@ -186,7 +184,7 @@ my-first-deployment  dev          aws-sagemaker  FastaiMedicalImagingService:202
 
 ## Clean up Sagemaker deployment with BentoML
 
-BentoML will automatically clean up resources when you want to delete your deployment.
+BentoML cleans up resources when you want to delete your deployment.
 
 *Example:*
 ```
@@ -199,5 +197,4 @@ $ bentoml sagemaker delete my-first-deployment
 * [BentoML Documentation]()
 * [Quick start guide]()
 * [Community]()
-
 
