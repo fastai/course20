@@ -1,9 +1,10 @@
-__version__ = "0.0.15"
-import matplotlib as mpl, pkgutil, requests
+__version__ = "0.0.16"
+import matplotlib as mpl, pkgutil, requests, time
 from fastai.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
 from io import StringIO, BytesIO
+from urllib.error import URLError,HTTPError
 
 try: from ipywidgets import widgets
 except ModuleNotFoundError: warn("Missing `ipywidgets` - please install it")
@@ -42,14 +43,31 @@ def gv(s): return graphviz.Source('digraph G{ rankdir="LR"' + s + '; }')
 def get_image_files_sorted(path, recurse=True, folders=None):
     return get_image_files(path, recurse, folders).sorted()
 
-def search_images_bing(key,earch_images_bing(key, term, min_sz=128, max_images=150):
-    params = {'q':term, 'count':max_images, 'min_height':min_sz, 'min_width':min_sz}
-    headers = {"Ocp-Apim-Subscription-Key":key}
+def search_images_bing(key, term, min_sz=128, max_images=150):
+    params = dict(q=term, count=max_images, min_height=min_sz, min_width=min_sz)
     search_url = "https://api.bing.microsoft.com/v7.0/images/search"
-    response = requests.get(search_url, headers=headers, params=params)
+    response = requests.get(search_url, headers={"Ocp-Apim-Subscription-Key":key}, params=params)
     response.raise_for_status()
-    search_results = response.json()
-    return L(search_results['value'])term, Min_sz=128):
+    return L(response.json()['value'])
+
+def search_images_ddg(term, max_images=200):
+    "Search for `term` with DuckDuckGo and return a unique urls of about `max_images` images"
+    assert max_images<1000
+    url = 'https://duckduckgo.com/'
+    res = urlread(url,data={'q':term}).decode()
+    searchObj = re.search(r'vqd=([\d-]+)\&', res)
+    assert searchObj
+    requestUrl = url + 'i.js'
+    params = dict(l='us-en', o='json', q=term, vqd=searchObj.group(1), f=',,,', p='1', v7exp='a')
+    urls,data = set(),{'next':1}
+    while len(urls)<max_images and 'next' in data:
+        try:
+            data = urljson(requestUrl,data=params)
+            urls.update(L(data['results']).itemgot('image'))
+            requestUrl = url + data['next']
+        except (URLError,HTTPError): pass
+        time.sleep(0.2)
+    return L(urls)
 
 def plot_function(f, tx=None, ty=None, title=None, min=-2, max=2, figsize=(6,4)):
     x = torch.linspace(min,max)

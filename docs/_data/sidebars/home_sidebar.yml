@@ -9,32 +9,11 @@ entries:
     - output: web,pdf
       title: Overview
       url: /
+    - output: web,pdf
+      title: Downloading images
+      url: /images
     output: web
-    title: Getting started
-  - folderitems:
-    - output: web,pdf
-      title: Colab
-      url: /start_colab
-    - output: web,pdf
-      title: Gradient
-      url: /start_gradient
-    - output: web,pdf
-      title: Sagemaker
-      url: /start_sagemaker
-    output: web
-    title: Notebook Servers
-  - folderitems:
-    - output: web,pdf
-      title: Google Cloud
-      url: /start_gcp
-    - output: web,pdf
-      title: Azure
-      url: /start_azure_dsvm
-    - output: web,pdf
-      title: DataCrunch.io
-      url: /start_datacrunch
-    output: web
-    title: Full Linux Servers
+    title: Book and course help
   - folderitems:
     - output: web,pdf
       title: Lesson 1 - Your first models
@@ -64,11 +43,38 @@ entries:
     title: Lessons
   - folderitems:
     - output: web,pdf
+      title: Colab
+      url: /start_colab
+    - output: web,pdf
+      title: Gradient
+      url: /start_gradient
+    - output: web,pdf
+      title: Sagemaker
+      url: /start_sagemaker
+    output: web
+    title: Notebook Servers
+  - folderitems:
+    - output: web,pdf
+      title: Google Cloud
+      url: /start_gcp
+    - output: web,pdf
+      title: Azure
+      url: /start_azure_dsvm
+    - output: web,pdf
+      title: DataCrunch.io
+      url: /start_datacrunch
+    output: web
+    title: Full Linux Servers
+  - folderitems:
+    - output: web,pdf
       title: Heroku
       url: /deployment_heroku
     - output: web,pdf
       title: Azure Functions
       url: /deployment_azure_functions
+    - output: web,pdf
+      title: BentoML
+      url: /deployment_bento
     - output: web,pdf
       title: SeeMe.ai
       url: /deployment_seeme_ai

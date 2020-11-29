@@ -1,14 +1,7 @@
 {
-  "Getting started": {
-    "Overview": "/"
-  }, "Notebook Servers": {
-    "Colab": "/start_colab",
-    "Gradient": "/start_gradient",
-    "Sagemaker": "/start_sagemaker"
-  }, "Full Linux Servers": {
-      "Google Cloud": "/start_gcp",
-      "Azure": "/start_azure_dsvm",
-      "DataCrunch.io": "/start_datacrunch"
+  "Book and course help": {
+    "Overview": "/",
+    "Downloading images": "/images"
   }, "Lessons": {
     "Lesson 1 - Your first models": "videos?lesson=1",
     "Lesson 2 - Evidence and p values": "videos?lesson=2",
@@ -18,6 +11,14 @@
     "Lesson 6 - Collaborative filtering": "videos?lesson=6",
     "Lesson 7 - Tabular data": "videos?lesson=7",
     "Lesson 8 - Natural language processing": "videos?lesson=8"
+  }, "Notebook Servers": {
+    "Colab": "/start_colab",
+    "Gradient": "/start_gradient",
+    "Sagemaker": "/start_sagemaker"
+  }, "Full Linux Servers": {
+      "Google Cloud": "/start_gcp",
+      "Azure": "/start_azure_dsvm",
+      "DataCrunch.io": "/start_datacrunch"
   }, "Deployment": {
     "Heroku": "/deployment_heroku",
     "Azure Functions": "/deployment_azure_functions",
