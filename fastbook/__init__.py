@@ -1,5 +1,5 @@
-__version__ = "0.0.14"
-import matplotlib as mpl, pkgutil
+__version__ = "0.0.15"
+import matplotlib as mpl, pkgutil, requests
 from fastai.vision.all import *
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
@@ -9,11 +9,6 @@ try: from ipywidgets import widgets
 except ModuleNotFoundError: warn("Missing `ipywidgets` - please install it")
 try: import sentencepiece
 except ModuleNotFoundError: warn("Missing `sentencepiece` - please run `pip install 'sentencepiece<0.1.90'`")
-try:
-    from azure.cognitiveservices.search.imagesearch import ImageSearchClient as api
-    from msrest.authentication import CognitiveServicesCredentials as auth
-except ModuleNotFoundError:
-    warn("Missing Azure SDK - please run `pip install azure-cognitiveservices-search-imagesearch`")
 try: from nbdev.showdoc import *
 except ModuleNotFoundError: warn("Missing `nbdev` - please install it")
 try:
@@ -47,9 +42,14 @@ def gv(s): return graphviz.Source('digraph G{ rankdir="LR"' + s + '; }')
 def get_image_files_sorted(path, recurse=True, folders=None):
     return get_image_files(path, recurse, folders).sorted()
 
-def search_images_bing(key, term, min_sz=128):
-    client = api('https://api.cognitive.microsoft.com', auth(key))
-    return L(client.images.search(query=term, count=150, min_height=min_sz, min_width=min_sz).value)
+def search_images_bing(key,earch_images_bing(key, term, min_sz=128, max_images=150):
+    params = {'q':term, 'count':max_images, 'min_height':min_sz, 'min_width':min_sz}
+    headers = {"Ocp-Apim-Subscription-Key":key}
+    search_url = "https://api.bing.microsoft.com/v7.0/images/search"
+    response = requests.get(search_url, headers=headers, params=params)
+    response.raise_for_status()
+    search_results = response.json()
+    return L(search_results['value'])term, Min_sz=128):
 
 def plot_function(f, tx=None, ty=None, title=None, min=-2, max=2, figsize=(6,4)):
     x = torch.linspace(min,max)
