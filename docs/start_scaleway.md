@@ -30,19 +30,19 @@ On computers running Windows, or if you prefer a graphical user interface, you c
 
 2 . Launch [PuTTYgen by double-clicking on the application:
 
-<img src="/images/scaleway/puttygenapp.webp" width="80" alt="">
+<img src="/images/scaleway/puttygenapp.webp" width="80" alt="" class="screenshot">
 
 3 . Select **RSA**, set the number of bits in the key to **4096** and click the **Generate** button:
 
-<img src="/images/scaleway/puttygen.webp" width="350" alt="">
+<img src="/images/scaleway/puttygen.webp" width="350" alt="" class="screenshot">
 
 4 . Move the mouse around the blank area, as indicated, to generate some randomness:
 
-<img src="/images/scaleway/puttygen_randomness.gif" width="350" alt="">
+<img src="/images/scaleway/puttygen_randomness.gif" width="350" alt="" class="screenshot">
 
 5 . Two keys are generated (a public key that will be transferred on your instances, and a private key that you must keep secret):
 
-<img src="/images/scaleway/puttygen_key.webp" width="350" alt="">
+<img src="/images/scaleway/puttygen_key.webp" width="350" alt="" class="screenshot">
 
 
 * Fill-in the **Key-comment** field with a name to help you identify this key pair.
@@ -54,11 +54,11 @@ On computers running Windows, or if you prefer a graphical user interface, you c
 
 Uoplad the content of the public key by clicking on Add a new SSH key on the Credentials tab of the Project Dashboard.
 
-<img src="/images/scaleway/ssh-keys-settings.webp" width="700" alt="">
+<img src="/images/scaleway/ssh-keys-settings.webp" width="700" alt="" class="screenshot">
 
 A pop up appears. Paste the key in the indicated box, add a description, and click on **Add a SSH key**.
 
-<img src="/images/scaleway/new-ssh-key.png" width="500" alt="">
+<img src="/images/scaleway/new-ssh-key.png" width="500" alt="" class="screenshot">
 
 ## Step 4: Requesting a GPU Instance quota increase
 
@@ -120,11 +120,11 @@ The command above configures the port forwarding of the local port `7777` to the
 
 You can get your course material by cloning the GitHub repository. To do so, open a new terminal in Jupyter Notebook by clicking on **New** -> **Terminal**:
 
-<img src="/images/scaleway/jupyter_terminal.png" width="700" alt="">
+<img src="/images/scaleway/jupyter_terminal.png" width="700" alt="" class="screenshot">
 
 Type the following command in the terminal to get the 2020 version of the course 'git clone https://github.com/fastai/course20'
 
-<img src="/images/scaleway/jupyter_git.png" width="700" alt="">
+<img src="/images/scaleway/jupyter_git.png" width="700" alt="" class="screenshot">
 
 > **Note:** Alternatively, you can also run the command in a "classic" SSH terminal. 
 
