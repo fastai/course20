@@ -18,11 +18,11 @@ Create your account on [console.scaleway.com](https://console.scaleway.com/regis
 
 Scaleway's services are postpaid. This means you receive a monthly invoice for your resource consumption. To be able to deploy resources, you have to register a valid credit or debit card in your account. 
 
-> **Note:** When you register your card, a €2.00 transaction is made. This transaction comes with a validation code. It is required to validate the card in your Scaleway Console - once validated; the amount will be refunded to your card. 
+> **Note:** When you register your card, a €2.00 transaction is made. This transaction comes with a validation code. It is required to validate the card in your Scaleway Console - once validated, the amount will be refunded to your card. 
 
 ## Step 3: Creating an SSH key.
 
-You require an SSH key to access your GPU instance. An SSH key allows you to authenticate passwordless on **S**ecure **SH**ell connections. On computers running Linux or MacOS, you can create the SSH key direcly from a terminal: Type the following command `ssh-keygen -o -b 4096` and press Enter to generate the new key.
+You require an SSH key to access your GPU instance. An SSH key allows passwordless authentication on **S**ecure **SH**ell connections. On computers running Linux or MacOS, you can create the SSH key from a terminal: Type the following command `ssh-keygen -o -b 4096` and press Enter to generate the new key.
 
 On computers running Windows, or if you prefer a graphical user interface, you can use a tool such as PuTTYgen to generate the key.
 
@@ -32,7 +32,7 @@ On computers running Windows, or if you prefer a graphical user interface, you c
 
 <img src="images/scaleway/puttygenapp.webp" width="80" alt="" class="screenshot">
 
-3 . Select **RSA**, set the number of bits in the key to **4096** and click the **Generate** button:
+3 . Select **RSA**, set the number of bits in the key to **4096**, and click the **Generate** button:
 
 <img src="images/scaleway/puttygen.webp" width="350" alt="" class="screenshot">
 
@@ -40,7 +40,7 @@ On computers running Windows, or if you prefer a graphical user interface, you c
 
 <img src="images/scaleway/puttygen_randomness.gif" width="350" alt="" class="screenshot">
 
-5 . Two keys are generated (a public key that will be transferred on your instances, and a private key that you must keep secret):
+5 . Two keys are generated (a public key that will be transferred to your instances and a private key that you must keep secret):
 
 <img src="images/scaleway/puttygen_key.webp" width="350" alt="" class="screenshot">
 
@@ -48,21 +48,21 @@ On computers running Windows, or if you prefer a graphical user interface, you c
 * Fill-in the **Key-comment** field with a name to help you identify this key pair.
 * Click the **Save public key** button and save it in the folder of your choice.
 * Click the **Save private key** button and save it the same folder.
-* Select the public key content. Copy it (below _Public key for pasting into OpenSSH authorized_keys file_) into your clipboard which is required for the following step.
+* Select the public key content. Copy it (below _Public key for pasting into OpenSSH authorized_keys file_) into your clipboard, which is required for the following step.
 
 6 . Go to your Scaleway Elements console and add the key to your Project.
 
-Uoplad the content of the public key by clicking on Add a new SSH key on the Credentials tab of the Project Dashboard.
+Upload the public key's content by clicking on Add a new SSH key on the Credentials tab of the Project Dashboard.
 
 <img src="images/scaleway/ssh-keys-settings.webp" width="700" alt="" class="screenshot">
 
-A pop up appears. Paste the key in the indicated box, add a description, and click on **Add a SSH key**.
+A pop-up appears. Paste the key in the indicated box, add a description, and click on **Add a SSH key**.
 
 <img src="images/scaleway/new-ssh-key.webp" width="500" alt="" class="screenshot">
 
 ## Step 4: Requesting a GPU Instance quota increase
 
-By default, your quota for "RENDER-S" instances is set to 0, and you will need to request a quota increase in order to create a GPU Instance. To increase your quota contact Scaleway's Trust&Safety Team by [ticket](https://console.scaleway.com/support/create).
+By default, your quota for "RENDER-S" instances is set to 0, and you will need to request a quota increase in order to create a GPU Instance. To increase your quota, contact Scaleway's Trust&Safety Team by [ticket](https://console.scaleway.com/support/create).
 
 ## Step 5: Deploying your GPU Instance
 
@@ -82,20 +82,21 @@ By default, your quota for "RENDER-S" instances is set to 0, and you will need t
 
 ## Step 6: Launching Jupyter Notebook
 
-8 . Once your GPU instance is ready, connect to it using SSH to launch the Jupyter Notebook application:
+1 . Once your GPU instance is ready, connect to it using SSH to launch the Jupyter Notebook application:
 
 ```
 ssh root@gpu-instance-ip
 ```
-Start the Jupyter Notebook application by running the following command:
+
+2 . Start the Jupyter Notebook application by running the following command:
 
 ```
 jupyter notebook --no-browser --port=8888 --allow-root
 ``` 
 
-The flag `--no-browser` prevents opening the notebook in a browser after startup. The flag `--port=8888` specifies the port on which the notebook listens. It is possible to change this value to another port number if required.
+The flag `--no-browser`  prevents the notebook from attempting to open in a browser after startup. The flag `--port=8888` specifies the port on which the notebook listens. It is possible to change this value to another port number if required.
 
-If you start the application for the first time, a link with an authentication token displays. Keep a note of this link as you need it in a later stop:
+If you start the application for the first time, a link with an authentication token displays. Keep a note of this token as you need it in a later step:
 
 ```
 Copy/paste this URL into your browser when you connect for the first time,
@@ -103,13 +104,13 @@ Copy/paste this URL into your browser when you connect for the first time,
         http://localhost:8888/?token=da97d8dfc8e409f2045da6ccb8685407644a409c2d51bc6e
 ```
 
-9 . Open a local terminal and run the following command:
+3 . Open a local terminal and run the following command:
 
 ```
 ssh -N -L localhost:7777:localhost:8888 root@gpu-instance-ip
 ```
 
-The command above configures the port forwarding of the local port `7777` to the port `8888` on the GPU instance. This allows access to the Jupyter Notebook with a web browser from the local computer.
+The command above configures the port forwarding of the local port `7777` to port `8888` on the GPU instance. This allows access to the Jupyter Notebook with a web browser from the local computer.
 
 > Optional: Use the option `-f` in the command above to move SSH into the background, so the local terminal remains usable.
 
@@ -136,7 +137,7 @@ To manage your expenses, you can archive your GPU instance when you are not usin
 scw instance server stop <instance_id>
 ```
 
-When you have finished the course; you can delete the GPU instance einter from the Scaleway Elements Console or by using the CLI: 
+When you have finished the course; you can delete the GPU instance either from the Scaleway Elements Console or by using the CLI: 
 
 ```
 scw instance server delete <instance_id>
