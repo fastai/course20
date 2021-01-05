@@ -28,7 +28,7 @@ On computers running Windows, or if you prefer a graphical user interface, you c
 
 1 . Download [PuTTYgen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to your local computer
 
-2 . Launch [PuTTYgen by double-clicking on the application:
+2 . Launch PuTTYgen by double-clicking on the application:
 
 <img src="images/scaleway/puttygenapp.webp" width="80" alt="" class="screenshot">
 
@@ -58,7 +58,7 @@ Uoplad the content of the public key by clicking on Add a new SSH key on the Cre
 
 A pop up appears. Paste the key in the indicated box, add a description, and click on **Add a SSH key**.
 
-<img src="images/scaleway/new-ssh-key.png" width="500" alt="" class="screenshot">
+<img src="images/scaleway/new-ssh-key.webp" width="500" alt="" class="screenshot">
 
 ## Step 4: Requesting a GPU Instance quota increase
 
