@@ -8,7 +8,7 @@ This is a quick guide to getting started with Deep Learning for Coders on Papers
 
 **Paperspace recently introduced a [Free Tier of free GPU and CPU instances](https://docs.paperspace.com/gradient/instances/free-instances).** To use them, choose *Free-GPU* or *Free-P5000* (recommended) in step 2.6 Create Notebook.
 
-Note: Additional capacity and more powerful GPUs are available with paid instance types.  Use the Fast.ai promo code (see below) for free credit 💰 when using these instances.  Paid instances are billed while they're running (per second!) and the rate is dependent on the [Instance Type](https://gradient.paperspace.com/instances) selected. Notebooks must be stopped to end billing.  Consider using new [Gradient "preemptible" instances](https://docs.paperspace.com/gradient/instances/preemptible-instances) which can save you money when using paid instances.
+Note: Additional capacity and more powerful GPUs are available with paid instance types.  Paid instances are billed while they're running (per second!) and the rate is dependent on the [Instance Type](https://gradient.paperspace.com/instances) selected. Notebooks must be stopped to end billing.  Consider using new [Gradient "preemptible" instances](https://docs.paperspace.com/gradient/instances/preemptible-instances) which can save you money when using paid instances.
 
 ## Step 1: Create an account
 
@@ -97,10 +97,6 @@ Gradient Notebooks can be shared publicly so others can view and/or fork your wo
 ### Viewing a stopped notebook
 
 Gradient Notebooks can be viewed without running them. Just click open to view a static version of the notebook.
-
-### Promotional credit
-
-Paperspace provides $15 of free Gradient credit for using paid instances. This code is to be used for Fast.ai students only. In your console, click on Billing and enter the promo code at the bottom right. The promo code for this course is: **FASTAIGR20**. _Note: the code is valid until Dec 31st, 2020_
 
 ### Where to get help
 
