@@ -54,7 +54,6 @@ Once you click on 'Terminal' a new window should open with a terminal. Type:
 
 then
 
-    cd fastbook
     git pull
 
 Now you should close the terminal window.
