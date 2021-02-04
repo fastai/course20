@@ -1,7 +1,6 @@
 # JarvisCloud
 
-![enter image description here](https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=2500&q=80)
-
+![image](images/jarviscloud/jarvisandfastai.png)
 Jarvis Cloud was built primarily with 2 purposes in mind. We want the platform to be simple and affordable for deep learning and AI practitioners. In this post, I want to take you through the process of spinning your first instance using Jarvis Cloud in less than 30 seconds.
 
 ## Pricing
