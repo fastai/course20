@@ -47,10 +47,18 @@ Commonly used tools like git, wget and several other python libraries come prein
 
 There are 4 important things that you can quickly do from the running instances. You can access jupyter lab, pause the instance after using, remove it completely when done and also connect to the instance through command line(Optional). 
 
-### Connect to Jupyter Lab
+### Connect to Jupyter Lab & start learning fast.ai
 Clicking the green color play button on the running instance opens a Jupyter Lab. If you like to work with Jupyter notebook, then change the word **lab** to **tree** in the url. 
 
 ![image](images/jarviscloud/jupyter.png)
+
+You can see the **course-v3** folder already downloaded for you. Open a terminal and navigate to the course-v3 folder and do a git pull to update the course.
+
+```
+cd course-v3/
+git pull
+```
+
 ###  Pause your instance
 After running few experiments, if you want to pause the instance for a later use then press the blue color pause button. You will be charged only for the storage during the paused duration.
 
