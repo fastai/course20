@@ -1,13 +1,13 @@
 # JarvisCloud
 
 ![image](images/jarviscloud/jarvisandfastai.png)
-Jarvis Cloud was built primarily with 2 purposes in mind. We want the platform to be simple and affordable for deep learning and AI practitioners. 
+JarvisCloud was built primarily with 2 purposes in mind. We want the platform to be simple and affordable for deep learning and AI practitioners. 
 
 By the end of the post, you would be able to create a Jupyter notebook and also ssh into the instance.  All in less than 30 seconds. 
 
 ## Pricing
 
-We currently offer 2 kind of GPU's. RTX 5000 (16GB) priced at 0.49$ an hour and RTX 6000 (24GB) priced @ 0.99$ an hour. We recommend using RTX 5000 for this course. All fastai users get a discount of 20% on RTX 5000 GPU's. So RTX 5000 cards will cost you $0.392 per hour which is the lowest to our knowledge and each instance comes with a free 20GB of storage space. 
+We currently offer 2 kind of GPU's. RTX 5000 (16GB) is priced at 0.49$ an hour and RTX 6000 (24GB) at 0.99$ an hour. We recommend using RTX 5000 for this course. All fastai users get a discount of 20% on RTX 5000 GPU's. So RTX 5000 cards will cost you $0.392 per hour which is the lowest to our knowledge and each instance comes with a free 20GB of storage space. 
 
 While not using the instances, you can pause the instances and you will just be charged $0.0005 per GB for every hour. So the 20GB storage will cost you $0.01 per hour. 
 
@@ -23,25 +23,25 @@ We use Stripe for managing all the credit card transactions. All the data shared
 ![image](images/jarviscloud/creditcard.png)
 
 ### Recharge the wallet
-Once the card is added successfully, you can recharge for a predefined amount of $10, $20, $50 or $100. If the recharge is successful, then we add the same amount as credits in the wallet.
+Once the card is added successfully, you can recharge for a predefined amount of $10, $20, $50 or $100. If the recharge is successful, then we add the same amount as credits in your wallet.
 
 ![image](images/jarviscloud/recharge.png)
 
 ### Subscribe for automatic recharges
-You can also automate recharging the wallet when the balance goes less than $5 automatically by subscribing to a range of amounts like $10, $20, $50 or $100. This is completely optional. 
+You can also automate recharging the wallet when the balance goes less than $5 by subscribing to a range of amounts like $10, $20, $50 or $100. This is completely optional. 
 
-You can enable the subscribe by checking on to "I confirm to subscribe" and pressing the subscribe. 
+You can enable the subscribe by checking on to "I confirm to subscribe" and pressing the subscribe button. 
 
 ![image](images/jarviscloud/subscribe.png)
 
 
 ## Step 3: Launch Instance to learn Fast.ai
 
-Choose the framework of choice, number of GPU's and storage you need. All the instances comes with a 20 GB storage by default. If you are starting with fast.ai then 20 GB should be enough. 
+Choose the framework of choice, number of GPU's, type of GPU and storage you need. All the instances comes with a 20 GB storage by default. If you are starting with fast.ai then 20 GB should be enough. 
 
 ![image](images/jarviscloud/launchinstance.png)
 
-Once you have choosen the configuration press the launch button. Your instance should be created in less than 30 seconds. You should be able to see a running instance like this. 
+Once you have choosen the configuration press the launch button. Your instance will be created in less than 30 seconds. You should be able to see a running instance like this. 
 ![image](images/jarviscloud/runninginstance.png)
 
 Commonly used tools like git, wget and several other python libraries come preinstalled along with the choosen framework. 
