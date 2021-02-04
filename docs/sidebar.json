@@ -18,7 +18,8 @@
   }, "Full Linux Servers": {
       "Google Cloud": "/start_gcp",
       "Azure": "/start_azure_dsvm",
-      "DataCrunch.io": "/start_datacrunch"
+      "DataCrunch.io": "/start_datacrunch",
+      "JarvisLabs.ai":"/start_jarviscloud"
   }, "Deployment": {
     "Heroku": "/deployment_heroku",
     "Azure Functions": "/deployment_azure_functions",
