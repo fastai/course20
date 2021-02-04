@@ -13,7 +13,7 @@ While not using the instances, you can pause the instances and you will just be 
 Sign up using this [link](https://cloud.jarvislabs.ai/?token=fastaiv3) to get the 20% discount on RTX 5000. 
 
 ## Step 2: Add Credits
-To avoid any unecessary billings we follow a prepaid system. You buy credits using a credit card. For all the activities  like create, pause and resume we deduct money from the credits added to the Jarviscloud wallet. 
+To avoid any unnecessary billings we follow a prepaid system. You buy credits using a credit card. For all the activities  like create, pause and resume we deduct money from the credits added to the Jarviscloud wallet. 
 
 ### Add Credit card 
 We use Stripe for managing all the credit card transactions. All the data shared to us related to your card is passed directly to Stripe. We do not store any information. You can add card details from the accounts section.
@@ -25,7 +25,7 @@ Once the card is added successfully, you can recharge for a predefined amount of
 
 ![image](images/jarviscloud/recharge.png)
 
-### Subscribe
+### Subscribe for automatic recharges
 You can also automate recharging the wallet when the balance goes less than $5 automatically by subscribing to a range of amounts like $10, $20, $50 or $100. This is completely optional. 
 
 You can enable the subscribe by checking on to "I confirm to subscribe" and pressing the subscribe. 
@@ -72,7 +72,7 @@ You can hit the play button on the paused instance to resume your work. A new in
 ### Destroying/Stopping the instance
 If you are done with the instance, then press the red color trash button, which will delete/destroy the entire machine. This is not a recoverable event, so ensure you have backed up any data that is required. 
 
-**Note: Ensure you either pause or destroy the instance to avoid any un necessary billings**
+**Note: Ensure you either pause or destroy the instance to avoid any unnecessary billings**
 
 ### Connecting via SSH to the instance
 You can also see a ssh command, which lets you ssh to the instance from a command line tool. If you like using VS code for coding, then you can use this to connect the VS Code to the remote instance. For simple access to the command line, you can use the terminal from jupyter lab. 
@@ -99,4 +99,4 @@ ssh-keygen -t rsa -b 4096
 
 Questions or issues related to course content, we recommend posting in the [fast.ai forum](http://forums.fast.ai/).
 
-Anything related to Jarviscloud, drop an email to hello@jarvislabs.ai. 
+Anything related to JarvisCloud, drop an email to hello@jarvislabs.ai. 
