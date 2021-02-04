@@ -1,7 +1,9 @@
 # JarvisCloud
 
 ![image](images/jarviscloud/jarvisandfastai.png)
-Jarvis Cloud was built primarily with 2 purposes in mind. We want the platform to be simple and affordable for deep learning and AI practitioners. In this post, I want to take you through the process of spinning your first instance using Jarvis Cloud in less than 30 seconds.
+Jarvis Cloud was built primarily with 2 purposes in mind. We want the platform to be simple and affordable for deep learning and AI practitioners. 
+
+By the end of the post, you would be able to create a Jupyter notebook and also ssh into the instance.  All in less than 30 seconds. 
 
 ## Pricing
 
@@ -10,7 +12,7 @@ We currently offer 2 kind of GPU's. RTX 5000 (16GB) priced at 0.49$ an hour and 
 While not using the instances, you can pause the instances and you will just be charged $0.0005 per GB for every hour. So the 20GB storage will cost you $0.01 per hour. 
 
 ## Step 1: Create an account
-Sign up using this [link](https://cloud.jarvislabs.ai/?token=fastaiv3) to get the 20% discount on RTX 5000. The discount is valid till end of December 2021. 
+Sign up using this [link](https://cloud.jarvislabs.ai/?token=fastaiv4) to get the 20% discount on RTX 5000. 
 
 ## Step 2: Add Credits
 To avoid any unnecessary billings we follow a prepaid system. You buy credits using a credit card. For all the activities  like create, pause and resume we deduct money from the credits added to the Jarviscloud wallet. 
@@ -52,10 +54,10 @@ Clicking the green color play button on the running instance opens a Jupyter Lab
 
 ![image](images/jarviscloud/jupyter.png)
 
-You can see the **course-v3** folder already downloaded for you. Open a terminal and navigate to the course-v3 folder and do a git pull to update the course.
+You can see the **fastbook** folder already downloaded for you. Open a terminal and navigate to the **fastbook** folder and do a git pull to update the course.
 
 ```
-cd course-v3/
+cd fastbook/
 git pull
 ```
 
@@ -70,7 +72,7 @@ All the paused instances are listed below the running instances.
 You can hit the play button on the paused instance to resume your work. A new instance is created with all your previous data. 
 
 ### Destroying/Stopping the instance
-If you are done with the instance, then press the red color trash button, which will delete/destroy the entire machine. This is not a recoverable event, so ensure you have backed up any data that is required. 
+If you have completed your work and no longer require the instance, then press the red color trash button, which will delete/destroy the entire instance. You billing will be stopped. This is not a recoverable event, so ensure you have backed up any data that is required. 
 
 **Note: Ensure you either pause or destroy the instance to avoid any unnecessary billings**
 
