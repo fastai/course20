@@ -10,7 +10,7 @@ We currently offer 2 kind of GPU's. RTX 5000 (16GB) priced at 0.49$ an hour and 
 While not using the instances, you can pause the instances and you will just be charged $0.0005 per GB for every hour. So the 20GB storage will cost you $0.01 per hour. 
 
 ## Step 1: Create an account
-Sign up using this [link](https://cloud.jarvislabs.ai/?token=fastaiv3) to get the 20% discount on RTX 5000. 
+Sign up using this [link](https://cloud.jarvislabs.ai/?token=fastaiv3) to get the 20% discount on RTX 5000. The discount is valid till end of December 2021. 
 
 ## Step 2: Add Credits
 To avoid any unnecessary billings we follow a prepaid system. You buy credits using a credit card. For all the activities  like create, pause and resume we deduct money from the credits added to the Jarviscloud wallet. 
