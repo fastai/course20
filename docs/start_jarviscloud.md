@@ -5,7 +5,7 @@ This is a quick guide to start Practical Deep Learning for Coders using [Jarvis 
 
 ## Quick Start
 
-1. Create an account at [cloud.jarvislabs.ai](https://cloud.jarvislabs.ai/register/?token=fastaiv4)
+1. Create an account at [cloud.jarvislabs.ai](https://cloud.jarvislabs.ai/register?token=fastaiv4)
 1. Add payment information in [Account section](https://cloud.jarvislabs.ai/account)
 1. Recharge wallet to add funds using [recharge wallet](https://cloud.jarvislabs.ai/account)
 1. Select machine type [here](https://cloud.jarvislabs.ai/) and click `Launch`
