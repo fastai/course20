@@ -3,15 +3,15 @@
 ![image](images/jarviscloud/jarvisandfastai.png)
 This is a quick guide to start Practical Deep Learning for Coders using [Jarvis Cloud](https://cloud.jarvislabs.ai/?token=fastaiv4). With Jarvis Cloud you get a GPU powered Jupyter notebook pre-configured with all the necessary software in less than 30 seconds.
 
-## Quick Start Section
+## Quick Start
 
-1. Create an account at [this link](https://cloud.jarvislabs.ai/register)
-1. Add payment information at [this link](https://cloud.jarvislabs.ai/account)
-1. Recharge wallet to add funds at [this link](https://cloud.jarvislabs.ai/account)
-1. Select machine type at [this link](https://cloud.jarvislabs.ai/) and click `Launch`
+1. Create an account at [cloud.jarvislabs.ai](https://cloud.jarvislabs.ai/register/?token=fastaiv4)
+1. Add payment information in [Account section](https://cloud.jarvislabs.ai/account)
+1. Recharge wallet to add funds using [recharge wallet](https://cloud.jarvislabs.ai/account)
+1. Select machine type [here](https://cloud.jarvislabs.ai/) and click `Launch`
 1. Start, Pause, or Delete with the buttons ![image](images/jarviscloud/actionbutton.png)
 
-> Note: Paused instances are only charged for storage
+> Note: Paused instances are only charged for storage.
 
 ## Pricing
 
