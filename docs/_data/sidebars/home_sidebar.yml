@@ -63,6 +63,9 @@ entries:
     - output: web,pdf
       title: DataCrunch.io
       url: /start_datacrunch
+    - output: web,pdf
+      title: JarvisLabs.ai
+      url: /start_jarviscloud
     output: web
     title: Full Linux Servers
   - folderitems:
