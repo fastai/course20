@@ -54,7 +54,7 @@ def search_images_ddg(term, max_images=200):
     "Search for `term` with DuckDuckGo and return a unique urls of about `max_images` images"
     assert max_images<1000
     url = 'https://duckduckgo.com/'
-    res = urlread(url,data={'q':term}).decode()
+    res = urlread(url,data={'q':term})
     searchObj = re.search(r'vqd=([\d-]+)\&', res)
     assert searchObj
     requestUrl = url + 'i.js'
