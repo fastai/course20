@@ -54,7 +54,7 @@ Jeremy has been using and teaching machine learning for around 30 years. He star
 
 Sylvain has written 10 math textbooks, covering the entire advanced French maths curriculum! He is now a researcher at Hugging Face, and was previously a researcher at fast.ai.
 
-We care a lot about teaching. In this course, we start by showing how to use a complete, working, very usable, state-of-the-art deep learning network to solve real-world problems, using simple, expressive tools. And then we gradually dig deeper and deeper into understanding how those tools are made, and how the tools that make those tools are made, and so on… We always teach through examples. We ensure that there is a context and a purpose that you can understand intuitively, rather than starting with algebraic symbol manipulation.
+We care a lot about teaching. In this course, we start by showing how to use a complete, working, very usable, state-of-the-art deep learning network to solve real-world problems, using simple, expressive tools. And then we gradually dig deeper and deeper into understanding how those tools are made, and how the tools that make those tools are made, and so on… We always teaching through examples. We ensure that there is a context and a purpose that you can understand intuitively, rather than starting with algebraic symbol manipulation.
 
 ## The software you will be using
 
