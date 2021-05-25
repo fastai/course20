@@ -95,14 +95,11 @@ When it turns green, copy your instance IP in the IPv4 column.
 
 It's time to connect! Open your command line [terminal](/terminal_tutorial_) and type the following command:
 
-```
-ssh -i ~/.ssh/<your_private_key_pair> -L localhost:8888:localhost:8888 ubuntu@<your instance IP>
-```
+    ssh ubuntu@<your-IP>
 
-(Replace '\<your instance IP\>' with your the IP address of your instance as shown before.
-Also note that you want to use '\<your_private_key_pair\>', not '\<your_private_key_pair.pub\>'.)
+(Replace '\<your-IP\>' with your the IP address of your instance as shown before.)
 
-You may have a question about trusting this address, to which you should reply 'yes'.
+You may be prompted about trusting this address, to which you should reply 'yes'.
 
 ## Step 6: Setup server
 
@@ -113,7 +110,11 @@ cd fastsetup
 sudo ./ubuntu-initial.sh
 ```
 
-Reboot when prompted. Then reconnect using ssh, and install miniconda:
+Reboot when prompted. Then reconnect using ssh, but with an additional `-L` flag which will allow you to connect to Jupyter Notebook once it's installed:
+
+    ssh -L localhost:8888:localhost:8888 ubuntu@<your-IP>
+
+Install miniconda:
 
 ```
 cd fastsetup
@@ -124,9 +125,7 @@ conda install -yq mamba
 
 Next, find out which NVIDIA drivers you need:
 
-```
-ubuntu-drivers devices
-```
+    ubuntu-drivers devices
 
 ...and install them -- choose the "recommended" option, plus the `-server` suffix:
 
@@ -137,39 +136,32 @@ sudo modprobe nvidia
 nvidia-smi
 ```
 
-Now you're ready to install PyTorch, fastai, and packages for the fast.ai course:
+Now you're ready to install all needed packages for the fast.ai course:
 
 ```
-mamba install -y pytorch fastai fastbook
+mamba install -y fastbook
 ```
 
 To download the notebooks, run:
 
-``` bash
-git clone https://github.com/fastai/fastbook
-```
+    git clone https://github.com/fastai/fastbook
 
 Next move into the directory where you will find the materials for the course by running:
 
-``` bash
-cd fastbook
-```
+    cd fastbook
 
 Finally run
-```
-jupyter notebook
-```
-in your terminal, and you can access the notebook by clicking on the URL that is printed in your terminal, or by copying it and pasting it into your browser.
 
-Go to the `app_jupyter.ipynb` to run the jupyter notebook tutorial. Come back here once you're finished and *don't forget to stop your instance* with the next step.
+    jupyter notebook
+
+You can access the notebook by clicking on the URL that is printed in your terminal, or by copying it and pasting it into your browser.
+
+Go to the `app_jupyter.ipynb` to run the jupyter notebook tutorial. *Don't forget to stop your instance* when you're done, with the next step.
 
 ## Step 7: Stop your instance when you are done
 
-When you finish working you must go back to your [AWS console](https://us-west-2.console.aws.amazon.com/ec2) and stop your instance manually to avoid getting extra charges. A good practice is setting a reminder for yourself (when you close your computer or log off) so you never forget to do it!
+When you finish working you must go back to your AWS console and stop your instance manually to avoid getting extra charges. A good practice is setting a reminder for yourself (when you close your computer or log off) so you never forget to do it!
 
 <img alt="stop" src="/images/aws/stop.png" class="screenshot">
 
-Note that you should press *Stop*, not *Terminate*. If you press *Terminate* it will remove your instance entirely and you will lose your work. Or you can directly stop your server from the terminal, by typing:
-
-    sudo halt
-
+Note that you should press *Stop*, not *Terminate*. If you press *Terminate* it will remove your instance entirely and you will lose your work.
