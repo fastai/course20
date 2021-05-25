@@ -140,12 +140,11 @@ nvidia-smi
 
 Now you're ready to install all needed packages for the fast.ai course:
 
-```
-mamba install -y fastbook
-```
+    mamba install -y fastbook
 
 To download the notebooks, run:
 
+    cd
     git clone https://github.com/fastai/fastbook
 
 Next move into the directory where you will find the materials for the course by running:
