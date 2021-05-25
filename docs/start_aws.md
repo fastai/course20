@@ -166,3 +166,7 @@ When you finish working you must go back to your AWS console and stop your insta
 <img alt="stop" src="/images/aws/stop.png" class="screenshot">
 
 Note that you should press *Stop*, not *Terminate*. If you press *Terminate* it will remove your instance entirely and you will lose your work.
+
+Alternatively, you can stop your server directly from the terminal:
+
+    sudo shutdown -h now
