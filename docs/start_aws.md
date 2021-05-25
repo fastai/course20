@@ -103,6 +103,8 @@ You may be prompted about trusting this address, to which you should reply 'yes'
 
 ## Step 6: Setup server
 
+Now that you're logged in to your server, we can get it set up. First, we'll have it run some basic steps to secure and configure Ubuntu:
+
 ```
 sudo apt update && sudo apt -y install git
 git clone https://github.com/fastai/fastsetup.git
