@@ -13,7 +13,8 @@ AWS EC2 provides preconfigured machine images called [DLAMI](https://aws.amazon.
 If you are returning to work and have previously completed the steps below, please go to the [returning to work](https://course.fast.ai/update_aws.html) section.
 
 ## Pricing
-A `p2.xlarge` instance in Amazon which is what we suggest, is [$0.9 an hour](https://aws.amazon.com/ec2/instance-types/p2/).
+
+A `g4dn.xlarge` instance in Amazon is what we suggest, which is [US$0.526 an hour](https://aws.amazon.com/ec2/instance-types/g4/).
 
 ## Step 1: Sign in or sign up
 
@@ -27,7 +28,7 @@ If you just created your account, you'll need to ask for an increase limit in th
 
 <img alt="amiubuntu" src="/images/aws/ec2.png" class="screenshot">
 
-Then on the left bar, choose Limits, then scroll through the list until you find g4dn.xlarge. You can skip this step if your limit is already 1 or more, otherwise click on 'Request limit increase'. Selecting 'Service Limit Increase', choose 'EC2 instance', your region, then 'g4dn.xlarge' and ask for a new limit of 1. Type the message '[FastAI] Limit Increase Request' in the use case description box, then select your preferred language and contact method before clicking 'Submit'. You should have an automatic reply telling you they'll look in your case, then an approval notice (hopefully in just a couple of hours).
+Then on the left bar, choose Limits, then select "All G instances". You can skip this step if your limit is already 1 or more, otherwise click on 'Request limit increase'. Selecting 'Service Limit Increase', choose 'EC2 instance', your region, then 'All G instances' and ask for a new limit of 1. Type the message '[FastAI] Limit Increase Request' in the use case description box, then select your preferred language and contact method before clicking 'Submit'. You should have an automatic reply telling you they'll look in your case, then an approval notice (hopefully in just a couple of hours).
 
 <img alt="limit" src="/images/aws/increase_limit2.png" class="screenshot">
 
