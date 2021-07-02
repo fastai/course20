@@ -171,3 +171,4 @@ Note that you should press *Stop*, not *Terminate*. If you press *Terminate* it 
 Alternatively, you can stop your server directly from the terminal:
 
     sudo shutdown -h now
+
