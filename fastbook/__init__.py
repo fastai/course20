@@ -1,6 +1,7 @@
-__version__ = "0.0.17"
+__version__ = "0.0.18"
 import matplotlib as mpl, pkgutil, requests, time
 from fastai.vision.all import *
+from fastdownload import download_url
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
 from io import StringIO, BytesIO
