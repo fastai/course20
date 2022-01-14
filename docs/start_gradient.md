@@ -6,80 +6,69 @@ This is a quick guide to getting started with Deep Learning for Coders on Papers
 
 ## Pricing
 
-**Paperspace recently introduced a [Free Tier of free GPU and CPU instances](https://docs.paperspace.com/gradient/instances/free-instances).** To use them, choose *Free-GPU* or *Free-P5000* (recommended) in step 2.6 Create Notebook.
+**Paperspace has a [Free Tier of free GPU and CPU instances](https://docs.paperspace.com/gradient/instances/free-instances).** To use them, choose *Free-GPU* or *Free-P5000* (recommended) in step 2.6 Create Notebook.
 
-Note: Additional capacity and more powerful GPUs are available with paid instance types.  Paid instances are billed while they're running (per second!) and the rate is dependent on the [Instance Type](https://gradient.paperspace.com/instances) selected. Notebooks must be stopped to end billing.  Consider using new [Gradient "preemptible" instances](https://docs.paperspace.com/gradient/instances/preemptible-instances) which can save you money when using paid instances.
+Note: Additional capacity and more powerful GPUs are available with paid instance types. Paid instances are billed while they're running and the rate is dependent on the [Instance Type](https://gradient.paperspace.com/instances) selected. Notebooks must be stopped to end billing.
 
 ## Step 1: Create an account
 
 To get started, create an account [here](https://console.paperspace.com/signup?gradient=true) and confirm your account by clicking the verification link in your inbox.
 
-## Step 2: Create Notebook
+## Step 2: Create a Project
 
-1. Login and select Gradient > Notebooks.
+In the sign up workflow you will be asked to create a project. Projects are used to organize all of the Gradient resources in one place. 
 
-2. Select the _Paperspace + Fast.AI_ base container.
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/ProjectCreate.png)
 
-![image](images/gradient/choose-container.jpg)
+## Step 3: Create Notebook
 
-1. Select the type of machine you want to run on.
+1. Open the project you created by clicking on the project tile. You can then click the Create button to start your first notebook. 
 
-Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever type you last used. But it's a good idea always to check! This will prevent billing and performance surprises.
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/NoebookCreate.png)
 
-![image](images/gradient/choose-instance.jpg)
+2. Select the _Paperspace + Fast.AI_ base container in the Select a runtime section.
 
-1. Name your Notebook (optional)
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/RuntimeSelector.png)
 
-2. Enter your payment details (if using a paid instance type). _Even if you have a promo or referral code, all paid instances require a valid credit card on file._
+3. Select the type of machine you want to run on in the Select a machine section. You will be able to change this once you start the notebook meaning you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. When you return to your notebook, the instance type will self-select to the instance type you most recently used. See the Stopping your Notebook section below for more information about choosing a new instance.
 
-3. Click Create Notebook
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/InstanceSelector.png)
 
-![create](images/gradient/create.png)
+4. Enter your payment details (if using a paid instance type). _Even if you have a promo or referral code, all paid instances require a valid credit card on file._
 
-Your Notebook will go from Pending to Running, and will be ready to use 🌟.
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/Payment.png)
 
-Note: When you are using paid instances, clicking Create Notebook will start your Notebook and your billing session will begin. To stop billing, you must stop your Notebook.
+5. Select an autoshutdown time period. This is how long the notebook instance will stay running before it shutsdown. All work will be saved when the instance is offline but cells can only be run when the instance is on. Note: All free instances have a max autoshutdown period of 6 hours. 
 
-## Step 3 : Update the fastai library
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/Autoshutdown.png)
 
-Before you start working you will need to update the fastai library and lesson notebooks. To do this you will have to access the terminal. You can do this by clicking in 'New', 'Terminal'.
+6. Click Start Notebook. Your Notebook will then appear on your screen. Wait for the status at the top of the page to go from Setting up Image to Running, and then you will be ready to go :star2:.
 
-![terminal](images/gradient/terminal.jpg)
+![image](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/SettingUpNotebook.png)
 
-Once you click on 'Terminal' a new window should open with a terminal. Type:
-
-
-    pip install fastai fastcore --upgrade
-
-
-then
-
-    git pull
-
-Now you should close the terminal window.
+Note: When you use paid instances, clicking Create Notebook will start your Notebook and your billing session will begin. To stop billing, you must stop your Notebook. 
 
 ## Step 4: Start learning Fast.ai!
 
-You should now have a running fast.ai notebook. It might take a few seconds to provision, but once it's running you just have to click "Open" to access your Jupyter notebook.
+From here it is as simple as clicking into the file in the file manager that you would like to run in the fast.ai course and begin or continue your journey.
 
-![ready](images/gradient/ready.jpg)
+If you would like to run the experience in Jupyter, then it is as easy as clicking the Jupyter icon at the bottom of the left-side menu when your notebook is online. To return to the Gradient platform from Jupyter just go back in your browser.
 
-Next from your jupyter notebook, click on 'fastbook' and you should look at something like this:
-
-![nb tuto](images/gradient/notebook-view-new.jpg)
-
-Go back to the [first page](https://course.fast.ai/index.html) to see how to use this jupyter notebook and run the jupyter notebook tutorial. Come back here once you're finished and _don't forget to stop your instance_ with the next step
+Go back to the [first page](https://course.fast.ai/index.html) to see how to use this notebook and run the notebook tutorial. Come back here once you're finished and _don't forget to stop your instance_ with the next step.
 
 ## Step 5: Stopping your Notebook
 
-Just click stop on the notebook page or notebook list view. This will end the session.
+There are two ways to stop your notebook.
 
-![stop1](images/gradient/stop-notebook1.jpg)
-![stop2](images/gradient/stop-notebook-list.jpg)
+1. Click the Stop Instance button at the top of your notebook.
 
-NOTE: When using paid instances, you _will_ be charged for the time that your notebook is running. You must stop the notebook to stop incurring charges.
+![stop1](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/StopNotebook.png)
 
-* * *
+2. Go to the Instance tab on the left menu and click stop instance. Note: Once your instance has stopped you can choose a new instance type to start your notebook on. Try something more powerful out to see how it impacts your notebook!
+
+![stop2](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/StopInstance-menu.png)
+
+Note: When using paid instances, you _will_ be charged for the time that your notebook is running. You must stop the notebook to stop incurring charges.
 
 ## Additional considerations:
 
@@ -89,17 +78,20 @@ The `/storage` folder is your [Persistent Storage](https://docs.paperspace.com/g
 
 ### Sharing your notebook
 
-Gradient Notebooks can be shared publicly so others can view and/or fork your work.  Just click the "share" button to generate a unique URL.
+Gradient Notebooks can be shared publicly so others can view and/or fork your work.  Just click the "share" button in the top right corner to get a shareable url.
 
-![share](images/gradient/share.jpg)
+![share](https://s3.amazonaws.com/ps.public.resources/img/fastai-v5/ShareNotebook.png)
+
 
 ### Viewing a stopped notebook
 
-Gradient Notebooks can be viewed without running them. Just click open to view a static version of the notebook.
+Gradient Notebooks can be viewed without running them. Just click open to view a static version of the notebook. Note: you may not see all of the files in your Notebook until you start the instance.
 
 ### Where to get help
 
-Questions or issues related to course content, we recommend posting in the [fast.ai forum](http://forums.fast.ai/). For Paperspace-specific support, check out the rest of the [Gradient Docs](https://docs.paperspace.com/gradient/) or submit a support ticket with [this form](https://support.paperspace.com/hc/en-us/requests/new).
+Questions or issues related to course content, we recommend posting in the [fast.ai forum](http://forums.fast.ai/). 
+
+For Paperspace-specific support, check out the rest of the [Gradient Docs](https://docs.paperspace.com/gradient/) or submit a support ticket with [this form](https://support.paperspace.com/hc/en-us/requests/new).
 
 ## Developing fastai on Gradient
 
