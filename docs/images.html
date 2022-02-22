@@ -33,7 +33,14 @@ nb_path: "images.ipynb"
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In chapter 2 of the <a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">Deep Learning for Coders book</a> (and lesson 3 of <a href="https://course.fast.ai">the course</a>) we show how to download images with the Bing Image Search API.</p>
 <p>You can get more information about this API from the <a href="https://www.microsoft.com/en-us/bing/apis/bing-image-search-api">official website</a>. If you're having trouble signing up for the service, there is some <a href="https://forums.fast.ai/t/getting-the-bing-image-search-key/67417">more information</a> on the forum.</p>
+<p>Additionally, here is a video which walks you through the process of getting the api keys:</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oR98Ookq3bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
 </div>
@@ -58,7 +65,7 @@ nb_path: "images.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">fastbook</span> <span class="k">import</span> <span class="o">*</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">fastbook</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">urls</span> <span class="o">=</span> <span class="n">search_images_ddg</span><span class="p">(</span><span class="s1">&#39;grizzly bear&#39;</span><span class="p">,</span> <span class="n">max_images</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">urls</span><span class="p">),</span><span class="n">urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
