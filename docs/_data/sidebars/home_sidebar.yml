@@ -58,6 +58,9 @@ entries:
       title: Google Cloud
       url: /start_gcp
     - output: web,pdf
+      title: AWS EC2
+      url: /start_aws
+    - output: web,pdf
       title: Azure
       url: /start_azure_dsvm
     - output: web,pdf

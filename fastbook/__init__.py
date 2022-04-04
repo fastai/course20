@@ -1,6 +1,7 @@
-__version__ = "0.0.16"
+__version__ = "0.0.18"
 import matplotlib as mpl, pkgutil, requests, time
 from fastai.vision.all import *
+from fastdownload import download_url
 from pandas.api.types import CategoricalDtype
 from scipy.cluster import hierarchy as hc
 from io import StringIO, BytesIO
@@ -54,7 +55,7 @@ def search_images_ddg(term, max_images=200):
     "Search for `term` with DuckDuckGo and return a unique urls of about `max_images` images"
     assert max_images<1000
     url = 'https://duckduckgo.com/'
-    res = urlread(url,data={'q':term}).decode()
+    res = urlread(url,data={'q':term})
     searchObj = re.search(r'vqd=([\d-]+)\&', res)
     assert searchObj
     requestUrl = url + 'i.js'

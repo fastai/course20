@@ -17,6 +17,7 @@
     "Sagemaker": "/start_sagemaker"
   }, "Full Linux Servers": {
       "Google Cloud": "/start_gcp",
+      "AWS EC2": "/start_aws",
       "Azure": "/start_azure_dsvm",
       "DataCrunch.io": "/start_datacrunch",
       "JarvisLabs.ai":"/start_jarviscloud"
