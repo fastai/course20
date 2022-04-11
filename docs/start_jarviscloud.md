@@ -82,7 +82,7 @@ You can leave the rest of the options if you are just getting started. Click on 
 > Info: Reserved instances keep running till YOU decide to pause/delete them. Choosing a spot instance by selecting NO for Reserved option,
 > lets you use a spare GPU at a discounted price. When the demand increases spot instances may get automatically paused.
 
-![image](images/jarviscloud/launchinstance.png)
+![image](images/jarviscloud/createinstance.png)
 
 The instance will be ready in less than 30 seconds. You should be able to see a running instance like this.
 ![image](images/jarviscloud/runninginstance.png)
