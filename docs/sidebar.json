@@ -14,13 +14,13 @@
   }, "Notebook Servers": {
     "Colab": "/start_colab",
     "Gradient": "/start_gradient",
-    "Sagemaker": "/start_sagemaker"
+    "Sagemaker": "/start_sagemaker",
+    "JarvisLabs.ai":"/start_jarviscloud"
   }, "Full Linux Servers": {
       "Google Cloud": "/start_gcp",
       "AWS EC2": "/start_aws",
       "Azure": "/start_azure_dsvm",
-      "DataCrunch.io": "/start_datacrunch",
-      "JarvisLabs.ai":"/start_jarviscloud"
+      "DataCrunch.io": "/start_datacrunch"
   }, "Deployment": {
     "Heroku": "/deployment_heroku",
     "Azure Functions": "/deployment_azure_functions",
