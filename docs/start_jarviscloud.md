@@ -1,114 +1,148 @@
-# Jarvis Cloud
+# Jarvislabs.ai
 
 ![image](images/jarviscloud/jarvisandfastai.png)
-This is a quick guide to start Practical Deep Learning for Coders using [Jarvis Cloud](https://cloud.jarvislabs.ai/?token=fastaiv4). With Jarvis Cloud you get a GPU powered Jupyter notebook pre-configured with all the necessary software in less than 30 seconds.
+This is a quick guide to starting Practical Deep Learning for Coders using [Jarvislabs.ai](https://jarvislabs.ai/). With Jarvislabs.ai you get a GPU powered Jupyter notebook pre-configured with all the necessary software in less than 30 seconds.
 
 ## Quick Start
 
 1. Create an account at [cloud.jarvislabs.ai](https://cloud.jarvislabs.ai/register?token=fastaiv4)
-1. Add payment information in [Account section](https://cloud.jarvislabs.ai/account)
-1. Recharge wallet to add funds using [recharge wallet](https://cloud.jarvislabs.ai/account)
-1. Select machine type [here](https://cloud.jarvislabs.ai/) and click `Launch`
+1. Add payment information on [billing section](https://cloud.jarvislabs.ai/account)
+1. Recharge your wallet [here](https://cloud.jarvislabs.ai/account)
+1. Select machine type [here](https://cloud.jarvislabs.ai/), framework, and click `Launch`
 1. Start, Pause, or Delete with the buttons ![image](images/jarviscloud/actionbutton.png)
 
-> Note: Paused instances are only charged for storage.
+> Note: Paused instances are charged only for storage.
 
 ## Pricing
 
-### Pricing for Running instance
+### Running instance
 
-[Jarvis Cloud](https://cloud.jarvislabs.ai/?token=fastaiv4) offers instances with different kinds of GPUs. Jarvis Cloud recommends using RTX 5000 for this course. A single instance created with 1 RTX 5000 costs $0.49/hour and comes with 7cores, 32GB RAM and a default 20GB storage space. Any additional storage will be charged at $0.0005/GB an hour.  
+[Jarvislabs.ai](https://cloud.jarvislabs.ai/?token=fastaiv4) offers below GPU-powered instances.
 
-**All fastai students get a discount of 20% on RTX 5000 GPU's.**  So an instance created with 1 RTX 5000 card and 20GB of storage will cost you $0.392/hour.
+| GPU      | GPU RAM | vCPUS | RAM  | Reserved | Spot     |
+| -------- | ------- | ----- | ---- | -------- | -------- |
+| A100     | 40GB    | 7     | 32GB | $2.39/hr | $0.99/hr |
+| A6000    | 48GB    | 7     | 32GB | $1.79/hr | $0.79/hr |
+| A5000    | 24GB    | 7     | 32GB | $1.29/hr | $0.59/hr |
+| RTX 6000 | 24GB    | 7     | 32GB | $0.99/hr | $0.39/hr |
+| RTX 5000 | 16GB    | 7     | 32GB | $0.49/hr | $0.19/hr |
 
-### Pricing for Paused instances
-To continue your work at a later point in time, Jarvis Cloud offers a pause feature. During the paused duration you will be charged only for the storage allocated to you. 
+Jarvislabs.ai recommends RTX 5000 to get started.
 
-For Example, an instance with 30GB storage while paused is charged at 0.015$/hour (Each GB costs $0.0005). Jarvis Cloud continues to charge for the storage as long as the instance is paused or till the account has enough funds. 
+All fastai students get a discount of 20% on RTX 5000 GPUs. For RTX5000,
 
-All the data gets deleted only when the account does not have enough funds or you choose to delete it.  
+- Reserved instance costs $0.392/hr
+- Spot instance costs $0.19/hr
 
-## Step 1: Create an account
-Sign up here [cloud.jarvislabs.ai](https://cloud.jarvislabs.ai/?token=fastaiv4) to get the 20% discount on RTX 5000. 
+Spot instances let you use spare GPU capacity. When the demand increases, your instance may get paused, and any data saved on disk will persist. Spot instances are ideal for
 
-## Step 2: Add Credits
-To avoid any unnecessary billing Jarvis Cloud follows a prepaid system. You buy credits using a credit card. For all the activities like create, pause, and resume Jarvis Cloud deducts money from the credits added to the Jarvis Cloud wallet. 
+- Learning or exploring
+- Code having checkpoints, that allows training from the checkpoint
 
-### Add a Credit card 
-Jarvis Cloud uses Stripe for managing all the credit card transactions. All the data shared to Jarvis Cloud related to your card is passed directly to Stripe. Jarvis Cloud does not store any information related to your credit card. You can add card details from the accounts section.
+Each instance comes with 20GB storage and additional storage will be charged at $0.00014/GB per hour for running instances.
+
+> Note: Jarvislabs.ai follows a minute billing.
+
+### Paused instance
+
+To resume your work at a later point in time, Jarvislabs.ai offers a pause feature. During the paused duration you will be charged only for the storage allocated to you. For example, an instance with 20GB storage while paused is charged at $0.0028/hr. You can delete the instance, to stop the billing.
+
+Data gets deleted when you delete the instance or when the account does not have sufficient funds.
+
+## Create an account
+
+Sign up here at [cloud.jarvislabs.ai](https://cloud.jarvislabs.ai/?token=fastaiv4) to get 20% discount on RTX 5000.
+
+## Add Credits
+
+Jarvislabs.ai follows a prepaid system to avoid any unnecessary billing. You can recharge your wallet using a credit/debit card.
+For running and paused instances, credits will be deducted from your Jarvislabs.ai wallet.
+
+### Add a Credit card
+
+Jarvislabs.ai uses Stripe to manage all the credit card transactions. All the data shared to Jarvislabs.ai related to your card is passed directly to Stripe. Jarvislabs.ai does not store any information related to your credit card. You can add your card details in the [billing](https://cloud.jarvislabs.ai/account) section.
 
 ![image](images/jarviscloud/creditcard.png)
 
 ### Recharge the wallet
-Once the card is added successfully, you can recharge for a predefined amount of $10, $20, $50 or $100. If the recharge is successful, then Jarvis Cloud adds the same amount as credits in the wallet.
+
+Once the card is added, you can recharge for an amount of <span>$</span>10 to <span>$</span>1000. Once the recharge is successful, Jarvislabs.ai will add the same amount as credits in your wallet.
 
 ![image](images/jarviscloud/recharge.png)
 
-## Step 3: Launch Instance to learn Fast.ai
+## Launch Instance to learn Fast.ai
 
-Choose fast.ai from the frameworks, number of GPU's(Recommended 1) and storage you need. 
+Under the create instance section, choose
 
-![image](images/jarviscloud/launchinstance.png)
+- Framework : Fast.ai
+- Reserved : Yes / No
 
-Once you have chosen the configuration press the launch button. Your instance should be created in less than 30 seconds. You should be able to see a running instance like this. 
+You can leave the rest of the options if you are just getting started. Click on the Launch button to create the instance.
+
+> Info: Reserved instances keep running till YOU decide to pause/delete them. Choosing a spot instance by selecting NO for Reserved option,
+> lets you use a spare GPU at a discounted price. When the demand increases spot instances may get automatically paused.
+
+![image](images/jarviscloud/createinstance.png)
+
+The instance will be ready in less than 30 seconds. You should be able to see a running instance like this.
 ![image](images/jarviscloud/runninginstance.png)
 
-Commonly used tools like git, wget and several other python libraries along with fast.ai course materials come preloaded.
+Commonly used tools like git, wget, and several other python libraries along with fast.ai course materials come preloaded.
 
-**Launch only when you are ready to use, as the instances are charged for an hour**. 
+From a running instance, you can perform the below actions.
 
-There are 4 important things that you can quickly do from the running instances. You can access jupyter lab, pause the instance after using, remove it completely when done and also connect to the instance through command line(Optional). 
+1. ▶️ Open Jupyter lab
+2. ⏸️ Pause instance
+3. 🗑️ Delete instance
+4. Connect via SSH (Optional)
 
-### Connect to Jupyter Lab & start learning fast.ai
-Clicking the green color play button on the running instance opens a Jupyter Lab. If you like to work with Jupyter notebook, then change the word **lab** to **tree** in the url. 
+### Connect to Jupyter Lab & start learning Fast.ai
+
+Click on the ▶️ button on the running instance to open Jupyter Lab.
 
 ![image](images/jarviscloud/jupyter.png)
 
-You can see the **fastbook** folder already downloaded for you. Open a terminal and navigate to the **fastbook** folder and do a git pull to update the course.
+**fastbook** folder is preloaded in the instance. Open a terminal and navigate to the **fastbook** folder and do a git pull to update the course.
 
 ```
 cd fastbook/
 git pull
 ```
 
-###  Pause your instance
-After running few experiments, if you want to pause the instance for a later use then press the blue color pause button. You will be charged only for the storage during the paused duration.
+## Pause your instance
 
-All the paused instances are listed below the running instances.
+After running experiments, you can pause the instance for later use by clicking the ⏸️ pause button. Instances will be charged only for the storage for the paused duration.
+
+All the paused instances are listed below the running instances section.
 
 ![image](images/jarviscloud/pausedmachines.png)
 
-This feature is useful when you plan to return to use the instance in few hours or few days. If you plan not to use the instance further then press the red trash button to stop Jarvis Cloud from charging for the storage.
+> Note: If you are not planning to use the instance further, delete 🗑️ the instance to avoid storage costs.
 
-### Resuming an instance
-You can hit the play button on the paused instance to resume your work. A new instance is created with all your previous data. 
+## Resume an instance
 
-### Destroying/Stopping the instance
-If you have completed your work and no longer require the instance, then press the red color trash button, which will delete/destroy the entire instance. Your billing will be stopped. This is not a recoverable event, so ensure you have backed up any data that is required. 
+You can hit the ▶️ button on the paused instance to resume your work. A new instance is created with all your previous data.
 
-**Note: Ensure you destroy the instance to avoid any unnecessary billings**
+You can also click on setting ⚙️ to modify the configuration while resuming an instance.
 
-### Connecting via SSH to the instance
-You can also see a ssh command in the running instances section, which lets you ssh to the instance from a command line tool. If you like using VS code for coding, then you can use this to connect the VS Code to the remote instance. For simple access to the command line, you can use the terminal from jupyter lab. 
+- GPU Type
+- Number of GPUs
+- Increase/ Decrease storage capacity
+- Change instance type from Reserved to Spot or vice-versa
 
-**To see the ssh command you need to update your public ssh key from the API keys section**
+![image](images/jarviscloud/resumeinstance.png)
 
-## Step 4: Add SSH keys
-If you have created your ssh_keys earlier you can access it by using the below command in a **local**  terminal / PowerShell and update it in the API keys section.
-```
-cat ~/.ssh/id_rsa.pub
-```
-![image](images/jarviscloud/sshkeys.png)
+## Delete the instance
 
-If you do not have a ssh key then quickly create one. 
+When you no longer need the instance, press the red trash 🗑️ button, which will delete the entire instance. Billing for the instance will be stopped. This is not a recoverable event, so ensure you have backed up any data that is required.
 
-### Create your local SSH key pair
+**Note: Ensure you delete the instance to avoid any unnecessary billings.**
 
-Run the following command in a  **local**  terminal / PowerShell to generate an SSH key pair:
-```
-ssh-keygen -t rsa -b 4096
-```
+## Explore further
 
-## Need help
+You can do a lot more with Jarvislabs.ai. Please feel free to explore the [docs](https://jarvislabs.ai/docs/intro/) for further information.
 
-Drop an email to hello@jarvislabs.ai for any assistance or feature requests related to [Jarvis Cloud](https://cloud.jarvislabs.ai/?token=fastaiv4). 
+Please reach out to Jarvislabs.ai for any assistance or feature requests through
+
+- Chat option available on Jarvislabs.ai
+- Drop an email to hello@jarvislabs.ai

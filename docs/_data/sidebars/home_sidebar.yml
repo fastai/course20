@@ -51,6 +51,9 @@ entries:
     - output: web,pdf
       title: Sagemaker
       url: /start_sagemaker
+    - output: web,pdf
+      title: JarvisLabs.ai
+      url: /start_jarviscloud
     output: web
     title: Notebook Servers
   - folderitems:
@@ -66,9 +69,6 @@ entries:
     - output: web,pdf
       title: DataCrunch.io
       url: /start_datacrunch
-    - output: web,pdf
-      title: JarvisLabs.ai
-      url: /start_jarviscloud
     output: web
     title: Full Linux Servers
   - folderitems:
