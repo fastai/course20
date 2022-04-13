@@ -6,7 +6,7 @@ This is a quick guide to getting started with Deep Learning for Coders on Papers
 
 ## Pricing
 
-**Paperspace has a [Free Tier of free GPU and CPU instances](https://docs.paperspace.com/gradient/instances/free-instances).** To use them, choose *Free-GPU* or *Free-P5000* (recommended) in step 2.6 Create Notebook.
+**Paperspace has a [Free Tier of free GPU and CPU instances](https://docs.paperspace.com/gradient/instances/free-instances).** To use them, choose *Free-GPU* or *Free-P5000* (recommended) in step 3.3 Create Notebook.
 
 Note: Additional capacity and more powerful GPUs are available with paid instance types. Paid instances are billed while they're running and the rate is dependent on the [Instance Type](https://gradient.paperspace.com/instances) selected. Notebooks must be stopped to end billing.
 
