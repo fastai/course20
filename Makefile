@@ -13,7 +13,7 @@ docs: $(SRC)
 	touch docs
 
 release: pypi
-	fastrelease_conda_package --upload_user fastai --build_args '-c pytorch -c fastai'
+	fastrelease_conda_package --mambabuild --upload_user fastai --build_args '-c pytorch -c fastai'
 	nbdev_bump_version
 
 pypi: dist
