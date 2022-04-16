@@ -11,12 +11,10 @@ try: from ipywidgets import widgets
 except ModuleNotFoundError: warn("Missing `ipywidgets` - please install it")
 try: import sentencepiece
 except ModuleNotFoundError: warn("Missing `sentencepiece` - please run `pip install 'sentencepiece<0.1.90'`")
-try: from nbdev.showdoc import *
-except ModuleNotFoundError: warn("Missing `nbdev` - please install it")
 try:
     import graphviz
     from sklearn.tree import export_graphviz
-except ModuleNotFoundError: warn("Missing `graphviz` - please run `conda install fastbook`")
+except ModuleNotFoundError: warn("Missing `graphviz` - please run `conda install fastbook` if needed")
 
 mpl.rcParams['savefig.dpi']= 200
 mpl.rcParams['font.size']=12
