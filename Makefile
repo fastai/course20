@@ -13,8 +13,11 @@ docs: $(SRC)
 	touch docs
 
 release: pypi
-	fastrelease_conda_package --mambabuild --upload_user fastai --build_args '-c pytorch -c fastai'
+	fastrelease_conda_package --mambabuild --upload_user fastai --build_args '-c pytorch -c nvidia'
 	nbdev_bump_version
+
+conda-release:
+	fastrelease_conda_package --mambabuild --upload_user fastai --build_args '-c pytorch -c nvidia'
 
 pypi: dist
 	twine upload --repository pypi dist/*
