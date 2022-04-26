@@ -128,8 +128,6 @@ Next:
 
 You can also access all models offline on our native mobile apps. You can install them from the [iOS App Store](https://apps.apple.com/us/app/id1443724639) and [Android Play Store](https://play.google.com/store/apps/details?id=ai.seeme).
 
-Once you have logged in, you see the overview of models:
-
 ![SeeMe.ai mobile list of models](images/seeme_ai/seeme-ai-mobile-list-of-models.png)
 
 On the model detail, you can take pictures with the camera or select from the gallery:
