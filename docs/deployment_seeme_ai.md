@@ -10,7 +10,7 @@ This is a quick guide to deploy your trained models in just a few steps using [S
 
 ## Before you begin
 
-If you prefer to have these steps in a Jupyter Notebook, have a look at our [Fast.ai Quick guides on Github](https://github.com/SeeMe-ai/fastai-quick-guides).
+If you prefer to have these steps in a Jupyter Notebook, have a look at our [Fast.ai Quick guide on Github](https://github.com/SeeMe-ai/fastai-quick-guides/blob/master/seeme-quick-guide-fastai-v2.ipynb).
 
 ## Setup
 
@@ -20,12 +20,6 @@ All you need to deploy your model is the Python SDK:
 
 ```bash
 pip install --upgrade seeme
-```
-
-or in your Jupyter Notebook:
-
-```bash
-!pip install --upgrade seeme
 ```
 
 ### Create a client
@@ -72,67 +66,29 @@ learn.model.eval();
 
 # Export your model (by default your model will be exported to `export.pkl`)
 learn.export()
-
-## Alternatively, if you want to give the exported file a name
-
-# my_custom_filename = "a_filename_to_remember.pkl"
-
-# learn.export(my_custom_filename)
 ```
 
-### Create a model on SeeMe.ai
+### Create a model
 
-SeeMe.ai supports different types of AI applications with different frameworks and framework versions.
-
-All you need to do is get the application_id like this:
-
-```Python
-import torch
-import fastai
-
-# Get the application_id for your framework (version).
-application_id = client.get_application_id(
-  base_framework="pytorch",
-  framework="fastai",
-  base_framework_version=str(torch.__version__), # or pass the version like a string: "1.6.0"
-  framework_version=str(fastai.__version__), # or pass the version like a string: "2.0.10"
-  application="image_classification"
-)
-```
-
-Next, you create your model on SeeMe.ai
+Create your model on SeeMe.ai
 
 ```Python
 model_name = "My Model name"
 description = "Created to be used..."
-classes = "Cats and dogs"
 
 my_model = client.create_full_model({
     "name": model_name,
     "description": description,
-    "classes": classes,
-    "application_id": application_id
+    "application_id": application_id,
+    "auto_convert": True
 })
-```
-
-Quick note: to see all the supported applications, platforms and versions:
-
-```Python
-from pprint import pprint
-pprint(client.applications)
 ```
 
 ### Upload your model
 
 ```Python
-client.upload_model(my_model["id"], "folder/to/model")
-
-# Or, if you exported the model with a custom filename
-client.upload_model(
-  my_model["id"],
-  folder="folder/to/model/",
-  filename=my_custom_filename
-)
+#client.upload_model(my_model["id"], "folder/to/model")
+client.upload_model(my_model["id"], str(learn.path))
 ```
 
 ### Add a logo (Optional)
@@ -184,7 +140,7 @@ You will see an overview of all your models as well as the public models that ca
 
 Click on the model to start making predictions.
 
-![seeme-ai-your-first-model-cats-dogs](images/seeme_ai/seeme-ai-first-model-cats-dogs.png)
+![seeme-ai-your-first-model-cats-dogs](images/seeme_ai/seeme-ai-first-model-cats-dogs-edit.png)
 
 Here is what the detail screen looks like:
 
@@ -251,14 +207,16 @@ There you can invite people by entering their email address.
 
 Once invited, they will receive an email to either register (if that email is not yet associated to an account) or to notify them of your model being shared with them.
 
-## Pricing
+## Pricing (beta)
 
 For pricing details, check the [pricing page](https://www.seeme.ai/pricing/).
 
 ## Status Page
 
-An overview of the current (and limited past) status of SeeMe.ai, including our site, web app and API: [status page](https://status.seeme.ai/). 
+An overview of the current status of SeeMe.ai: [status page](https://status.seeme.ai/). 
 
 ## Support / Feedback
 
-For feedback, questions or problems, just send an email to [jan.vandepoel@seeme.ai](mailto:jan.vandepoel@seeme.ai).
+Check out the [docs](https://docs.seeme.ai) for more details, managing datasets, and/or other supported applications.
+
+For feedback, questions or problems, just send an email to [support@seeme.ai](mailto:support@seeme.ai).
