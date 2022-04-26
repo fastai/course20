@@ -4,7 +4,7 @@
   <img alt="SeeMe.ai" width="600" src="images/seeme_ai/seeme_ai.svg">
 </div>
 
-This is a quick guide to deploy your trained models in just a few steps using [SeeMe.ai](https://seeme.ai), which allows you to easily deploy, use and share your models.
+This is a quick guide to deploy your trained vision models in just a few steps using [SeeMe.ai](https://seeme.ai), which allows you to easily deploy, use and share your models.
 
 **NB**: SeeMe.ai is currently in pre-release. You can register for an account by following the steps below, and get 1000 predictions per month. However note that unreleased services like this one may be unstable, or may change in substantial ways, including major changes to pricing or quotas. SeeMe.ai has not announced any pricing plans as yet.
 
@@ -87,50 +87,19 @@ my_model = client.create_full_model({
 ### Upload your model
 
 ```Python
-#client.upload_model(my_model["id"], "folder/to/model")
 client.upload_model(my_model["id"], str(learn.path))
-```
-
-### Add a logo (Optional)
-
-```Python
-client.upload_logo(
-  my_model["id"],
-  folder="folder/to/image",
-  filename="image_name.png") # or ".jpg"
 ```
 
 ## Use your model
 
 Once your model is deployed, you can use it in a number of ways:
 
-- [Python SDK](https://pypi.org/project/seeme/)
+
 - [Web app](https://app.seeme.ai)
 - [iOS - App Store](https://apps.apple.com/us/app/id1443724639)
 - [Android - Play Store](https://play.google.com/store/apps/details?id=ai.seeme)
+- [Python SDK](https://pypi.org/project/seeme/)
 
-
-### Python SDK
-
-You can now use the [Python SDK](https://pypi.org/project/seeme/) to make predictions from basically anywhere, provided you have:
-
-- SeeMe SDK installed
-- Login credentials
-- The 'id' of a deployed model
-- An image to classiy
-
-```Python
-image_location = "data/images/image_to_predict.png"
-
-result = client.inference(my_model["id"], image_location)
-```
-
-Print the results
-
-```Python
-print(result["prediction"])
-print(result["confidence"])
-```
 
 ### On the web
 
@@ -157,7 +126,7 @@ Next:
 
 ### iOS/Android
 
-You can also access all models - yours, shared, and public - on our native mobile apps. You can install them from the [iOS App Store](https://apps.apple.com/us/app/id1443724639) and [Android Play Store](https://play.google.com/store/apps/details?id=ai.seeme).
+You can also access all models offline on our native mobile apps. You can install them from the [iOS App Store](https://apps.apple.com/us/app/id1443724639) and [Android Play Store](https://play.google.com/store/apps/details?id=ai.seeme).
 
 Once you have logged in, you see the overview of models:
 
@@ -189,7 +158,30 @@ Once installed, you can still switch between using the offline or online version
 
 ![SeeMe.ai switch between online and offline model](images/seeme_ai/seeme-ai-mobile-switch-online-offline.png)
 
-The screenshots above are all taken on iOS, however, on [Android](https://play.google.com/store/apps/details?id=ai.seeme) all these features work similarly, with one exception: Android offline models are still in development.
+The screenshots above are all taken on iOS, however, on [Android](https://play.google.com/store/apps/details?id=ai.seeme) all these features work very similar.
+
+### Python SDK
+
+You can now use the [Python SDK](https://pypi.org/project/seeme/) to make predictions from basically anywhere, provided you have:
+
+- SeeMe SDK installed
+- Login credentials
+- The 'id' of a deployed model
+- An image to classiy
+
+```Python
+image_location = "data/images/image_to_predict.png"
+
+result = client.inference(my_model["id"], image_location)
+```
+
+Print the results
+
+```Python
+print(result["prediction"])
+print(result["confidence"])
+```
+
 
 ## Share your model
 
@@ -207,7 +199,7 @@ There you can invite people by entering their email address.
 
 Once invited, they will receive an email to either register (if that email is not yet associated to an account) or to notify them of your model being shared with them.
 
-## Pricing (beta)
+## Pricing
 
 For pricing details, check the [pricing page](https://www.seeme.ai/pricing/).
 
@@ -217,6 +209,6 @@ An overview of the current status of SeeMe.ai: [status page](https://status.seem
 
 ## Support / Feedback
 
-Check out the [docs](https://docs.seeme.ai) for more details, managing datasets, and/or other supported applications.
+Check out the [docs](https://docs.seeme.ai) for more details, managing models and datasets, and/or other supported applications.
 
 For feedback, questions or problems, just send an email to [support@seeme.ai](mailto:support@seeme.ai).
