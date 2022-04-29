@@ -10,7 +10,7 @@ This is a quick guide to deploy your trained vision models in just a few steps u
 
 ## Before you begin
 
-If you prefer to have these steps in a Jupyter Notebook, have a look at our [Fast.ai Quick guide on Github](https://github.com/SeeMe-ai/fastai-quick-guides/blob/master/seeme-quick-guide-fastai-v2.ipynb).
+If you prefer to have these steps in a Jupyter Notebook, have a look at the [Fast.ai Quick guide on Github](https://github.com/SeeMe-ai/fastai-quick-guides/blob/master/seeme-quick-guide-fastai-v2.ipynb).
 
 ## Setup
 
@@ -209,4 +209,4 @@ An overview of the current status of SeeMe.ai: [status page](https://status.seem
 
 Check out the [docs](https://docs.seeme.ai) for more details, managing models and datasets, and/or other supported applications.
 
-For feedback, questions or problems, just send an email to [support@seeme.ai](mailto:support@seeme.ai).
+For feedback, questions or problems, send an email to [support@seeme.ai](mailto:support@seeme.ai).
