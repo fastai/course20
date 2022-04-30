@@ -38,6 +38,7 @@ def setup_book():
     if IN_COLAB: return setup_colab()
 
 def gv(s): return graphviz.Source('digraph G{ rankdir="LR"' + s + '; }')
+def gv2(s): return graphviz.Source(f'''digraph {{\nnode [ fontsize=24];\nrankdir="LR"\n{s};}}''')
 
 def get_image_files_sorted(path, recurse=True, folders=None):
     return get_image_files(path, recurse, folders).sorted()
@@ -66,10 +67,10 @@ def search_images_ddg(term, max_images=200):
             requestUrl = url + data['next']
         except (URLError,HTTPError): pass
         time.sleep(0.2)
-    return L(urls)
+    return L(urls)[:max_images]
 
 def plot_function(f, tx=None, ty=None, title=None, min=-2, max=2, figsize=(6,4)):
-    x = torch.linspace(min,max)
+    x = torch.linspace(min,max, 100)
     fig,ax = plt.subplots(figsize=figsize)
     ax.plot(x,f(x))
     if tx is not None: ax.set_xlabel(tx)
