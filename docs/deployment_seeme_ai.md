@@ -68,8 +68,16 @@ learn.model.eval();
 learn.export()
 ```
 
-### Create a model
+### Get the application_id for your framework (version).
+application_id = client.get_application_id(
+    base_framework="pytorch",
+    framework="fastai",
+    base_framework_version=str(torch.__version__),
+    framework_version=str(fastai.__version__),
+    application="image_classification"
+)
 
+### Create a model
 Create your model on SeeMe.ai
 
 ```Python
