@@ -4,7 +4,7 @@
   <img alt="SeeMe.ai" width="600" src="images/seeme_ai/seeme_ai.svg">
 </div>
 
-This is a quick guide to deploy your trained vision models in just a few steps using [SeeMe.ai](https://seeme.ai), which allows you to easily deploy, use and share your models.
+This is a quick guide to deploy your trained vision models in just a few steps using [SeeMe.ai](https://seeme.ai).
 
 **NB**: SeeMe.ai is currently in pre-release. You can register for an account by following the steps below, and get 1000 predictions per month. However note that unreleased services like this one may be unstable, or may change in substantial ways, including major changes to pricing or quotas. SeeMe.ai has not announced any pricing plans as yet.
 
@@ -62,7 +62,7 @@ client.login(my_username, my_password)
 
 ```Python
 # Put your model in eval model
-learn.model.eval();
+learn.model.eval()
 
 # Export your model (by default your model will be exported to `export.pkl`)
 learn.export()
@@ -102,16 +102,14 @@ client.upload_model(my_model["id"], str(learn.path))
 
 Once your model is deployed, you can use it in a number of ways:
 
-
 - [Web app](https://app.seeme.ai)
 - [iOS - App Store](https://apps.apple.com/us/app/id1443724639)
 - [Android - Play Store](https://play.google.com/store/apps/details?id=ai.seeme)
 - [Python SDK](https://pypi.org/project/seeme/)
 
-
 ### On the web
 
-You can also open the web app via [app.seeme.ai](https://app.seeme.ai) and log in with your credentials.
+You can also open the web app via [app.seeme.ai](https://app.seeme.ai/#/?filter=owned) and log in with your credentials.
 
 You will see an overview of all your models as well as the public models that can be used by anyone.
 
@@ -134,7 +132,9 @@ Next:
 
 ### iOS/Android
 
-You can also access all models offline on our native mobile apps. You can install them from the [iOS App Store](https://apps.apple.com/us/app/id1443724639) and [Android Play Store](https://play.google.com/store/apps/details?id=ai.seeme).
+When you upload your trained model, SeeMe.ai automatically converts it to [ONNX](https://onnx.ai/), [TensorFlow Lite](https://www.tensorflow.org/lite) and [Core ML](https://developer.apple.com/documentation/coreml). This enables you to install and use your AI Model on your device, even when you are offline.
+
+You can install the apps from the [iOS App Store](https://apps.apple.com/us/app/id1443724639) and [Android Play Store](https://play.google.com/store/apps/details?id=ai.seeme).
 
 ![SeeMe.ai mobile list of models](images/seeme_ai/seeme-ai-mobile-list-of-models.png)
 
@@ -154,8 +154,6 @@ Once your model has made a prediction, you will see a green button name "Action"
 
 ![SeeMe.ai follow up action](images/seeme_ai/seeme-ai-mobile-action-selection.png)
 
-When you upload your trained model, SeeMe.ai automatically converts it to [ONNX](https://onnx.ai/) and [Core ML](https://developer.apple.com/documentation/coreml), which enables you to install and use your AI Model on your device, even when you are offline. This feature is currently in preview.
-
 When the model is available to be installed, you will see the install button on the top right:
 
 ![SeeMe.ai install model offline](images/seeme_ai/seeme-ai-mobile-model-install-offline.png)
@@ -164,11 +162,9 @@ Once installed, you can still switch between using the offline or online version
 
 ![SeeMe.ai switch between online and offline model](images/seeme_ai/seeme-ai-mobile-switch-online-offline.png)
 
-The screenshots above are all taken on iOS, however, on [Android](https://play.google.com/store/apps/details?id=ai.seeme) all these features work very similar.
-
 ### Python SDK
 
-You can now use the [Python SDK](https://pypi.org/project/seeme/) to make predictions from basically anywhere, provided you have:
+You can also use the [Python SDK](https://pypi.org/project/seeme/) to make predictions from basically anywhere, provided you have:
 
 - SeeMe SDK installed
 - Login credentials
@@ -187,7 +183,6 @@ Print the results
 print(result["prediction"])
 print(result["confidence"])
 ```
-
 
 ## Share your model
 
