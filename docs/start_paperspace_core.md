@@ -66,9 +66,9 @@ Once you click **Create**, your machine will begin provisioning. If you set the 
 
 - Click *Connect To Your Machine*
 
-Connect to the machine by running the provided ssh command in your local terminal. An example is below:
+This will provide you with the username and IP address to connect to your machine. You will need to modify the command to allow you to connect to the Jupyter server on your machine. The command to run in your local terminal will look like the example below:
 ```
-ssh paperspace@123.456.789.012
+ssh -L localhost:8888:localhost:8888 paperspace@123.456.789.012
 ```
 
 **Note:** By default, the Linux user is `paperspace`.
@@ -123,7 +123,7 @@ Finally, spin up a Jupyter server using:
 jupyter notebook
 ```
 
-A page will open in your browser that will display the Fast.ai notebooks in your Jupyter environment. You can also access your Jupyter environment through the outputted url in your terminal.
+After the Jupyter server is running, copy and paste the url that was outputted in your terminal into your local browser to interact with the Jupyter enviornment and Fast.ai notebooks.
 
 
 ## Stopping Your Instance
