@@ -20,7 +20,8 @@
       "Google Cloud": "/start_gcp",
       "AWS EC2": "/start_aws",
       "Azure": "/start_azure_dsvm",
-      "DataCrunch.io": "/start_datacrunch"
+      "DataCrunch.io": "/start_datacrunch",
+      "Paperspace Core": "/start_paperspace_core"
   }, "Deployment": {
     "Heroku": "/deployment_heroku",
     "Azure Functions": "/deployment_azure_functions",

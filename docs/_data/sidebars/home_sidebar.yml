@@ -69,6 +69,9 @@ entries:
     - output: web,pdf
       title: DataCrunch.io
       url: /start_datacrunch
+    - output: web,pdf
+      title: Paperspace Core
+      url: /start_paperspace_core
     output: web
     title: Full Linux Servers
   - folderitems:
