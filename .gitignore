@@ -1,3 +1,4 @@
+.gitattributes
 Gemfile.lock
 conda/
 .last_checked
