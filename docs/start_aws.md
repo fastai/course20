@@ -141,7 +141,7 @@ nvidia-smi
 
 Now you're ready to install all needed packages for the fast.ai course:
 
-    mamba install -y fastbook
+    mamba install -y -c fastai fastbook
 
 To download the notebooks, run:
 
