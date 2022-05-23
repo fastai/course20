@@ -32,11 +32,11 @@ The project on which you are going to run the image needs to be linked with your
 
 ## Step 2: Request GPU quota increase
 
-By default your quota for "GPUs (all regions)" is set to 0, and you will need to request a quota increase in order to create a Notebooks instance with a GPU (as described below). Follow [these instructions](https://cloud.google.com/ai-platform/training/docs/quotas#requesting_a_quota_increase) to increase the quota for "GPUs (all regions)" to at least 1. Google says that the quota increase request may take up to 48 hours to process, but usually it should be processed much faster.
+By default your quota for "GPUs (all regions)" is set to 0, and you will need to request a quota increase in order to create a Notebooks instance with a GPU (as described below). Follow [these instructions](https://cloud.google.com/compute/quotas#requesting_additional_quota) to increase the Compute Engine quota for "GPUs (all regions)" to at least 1. Google says that the quota increase request may take up to 48 hours to process, but usually it should be processed much faster.
 
 ## Step 3: Create Notebook
 
-1. From the menu on the left hand side choose "AI Platform" -> "Notebooks"
+1. From the menu on the left hand side choose "AI Platform" -> "Workbench"
 2. Click "New Instance" ("Customize instance" to choose your options. Make sure you've completed step 2 above if you want to select a GPU. You get price calculation on the right.)
 3. You should see the instance listed. Select a checkbox and click "START"
 4. After ~2mins click "OPEN JUPYTERLAB"
