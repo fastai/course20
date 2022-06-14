@@ -37,5 +37,5 @@ The questions below are the same as those in the book. For more, including detai
 1. How could a feedback loop impact the rollout of a predictive policing model?
 1. Do we always have to use 224×224-pixel images with the cat recognition model?
 1. What is the difference between classification and regression?
-1. What is a validation set? What is a test set? Why do we need them?
+1. What is a validation set? What is a training set? Why do we need them?
 1. What will fastai do if you don't provide a validation set?
