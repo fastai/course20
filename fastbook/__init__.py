@@ -60,13 +60,15 @@ def search_images_ddg(term, max_images=200):
     requestUrl = url + 'i.js'
     params = dict(l='us-en', o='json', q=term, vqd=searchObj.group(1), f=',,,', p='1', v7exp='a')
     urls,data = set(),{'next':1}
+    headers = dict(referer='https://duckduckgo.com/')
     while len(urls)<max_images and 'next' in data:
         try:
-            data = urljson(requestUrl,data=params)
+            res = urlread(requestUrl, data=params, headers=headers)
+            data = json.loads(res) if res else {}
             urls.update(L(data['results']).itemgot('image'))
             requestUrl = url + data['next']
         except (URLError,HTTPError): pass
-        time.sleep(0.2)
+        time.sleep(1)
     return L(urls)[:max_images]
 
 def plot_function(f, tx=None, ty=None, title=None, min=-2, max=2, figsize=(6,4)):
