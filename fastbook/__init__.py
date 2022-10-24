@@ -1,4 +1,4 @@
-__version__ = "0.0.29"
+__version__ = "0.0.30"
 import matplotlib as mpl, pkgutil, requests, time
 from fastai.vision.all import *
 from fastdownload import download_url
